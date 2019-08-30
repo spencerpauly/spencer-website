@@ -1,0 +1,20 @@
+.header {
+    background: #2980b9;
+    height: 26em;
+    width: 100%;
+    color: white;
+}
+
+.header img {
+    width: 15em;
+    margin-top: 3em;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.header p {
+    font-size: .8em;
+}

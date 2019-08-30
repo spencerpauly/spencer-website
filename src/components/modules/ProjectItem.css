@@ -1,0 +1,16 @@
+.projectItem {
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 1em;
+    display: flex;
+}
+
+.projectItem h3 {
+    text-align: left;
+    flex-basis: 20%;
+}
+
+.projectItem p {
+    text-align: left;
+    flex-basis: 20%;
+}

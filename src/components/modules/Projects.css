@@ -1,0 +1,5 @@
+.projects {
+    background: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+}
