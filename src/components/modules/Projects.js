@@ -1,21 +1,28 @@
 import React, { Component} from 'react';
-import ProjectItem from './ProjectItem';
+import Project from './Project';
 import PropTypes from 'prop-types';
 import "./Projects.css"
 
 
 class Projects extends Component {
 
-    getProjects = () => {
-        return this.props.projects.map((project) => (
-            <ProjectItem key={project.id} project={project}/>
+    getFeaturedProjects = () => {
+        return this.props.projects.filter(project => project.featured === true).map((project) => (
+            <FeaturedProject key={project.id} project={project}/>
+        ))
+    }
+
+    getNonFeaturedProjects = () => {
+        return this.props.projects.filter(project => project.featured === false).map((project) => (
+            <Project key={project.id} project={project}/>
         ))
     }
 
     render() {
         return (
             <div className="projects">
-                {this.getProjects()}
+                {this.getFeaturedProjects()}
+                {this.getNonFeaturedProjects()}
             </div>
             
         )

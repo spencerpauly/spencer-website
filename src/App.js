@@ -4,7 +4,6 @@ import './App.css';
 import NavigationBar from './components/layout/NavigationBar';
 import Header from './components/layout/Header';
 import Projects from './components/modules/Projects';
-import FeaturedProjects from './components/modules/FeaturedProjects';
 import Container from './components/layout/Container';
 import About from './components/modules/About';
 
@@ -70,8 +69,7 @@ class App extends Component {
                 <div className="App" >
                     <NavigationBar />
                     <Header/>
-                    <FeaturedProjects projects={this.getFeaturedProjects()}/>
-                    <Projects projects={this.getNonFeaturedProjects()}/>
+                    <Projects projects={this.state.projects}/>
                 </div>
             </Router>
         );

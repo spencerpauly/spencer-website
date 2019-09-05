@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import Button from './Button';
+import Button from '@material-ui/core/Button';
 import "./ProjectItem.css"
 
 export class ProjectItem extends Component {
     
     githubButton = () => {
-        return (this.props.project.github !== "") ? 
-            <Button link={this.props.project.github}>Github</Button> : <span></span>
+        return (this.props.project.github !== "") ?
+            <Button variant="contained" color="tertiary">Github</Button> : <span></span>
     }
 
     projectButton = () => {
         return (this.props.project.project !== "") ?
-            <Button link={this.props.project.project}>Project</Button> : <span></span>
+            <Button variant="contained" color="primary">Project</Button> : <span></span>
     }
 
     render() {
