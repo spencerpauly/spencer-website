@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import NavigationBar from './components/layout/NavigationBar';
 import Header from './components/layout/Header';
 import Projects from './components/modules/Projects';
-import Container from './components/layout/Container';
-import About from './components/modules/About';
 
 class App extends Component {
     state = {

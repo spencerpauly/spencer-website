@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
-import "./ProjectItem.css"
+import "./Project.css"
 
-export class ProjectItem extends Component {
+export class Project extends Component {
     
     githubButton = () => {
         return (this.props.project.github !== "") ?
@@ -34,8 +34,8 @@ export class ProjectItem extends Component {
 }
 
 //PropTypes
-ProjectItem.propTypes = {
+Project.propTypes = {
     project: PropTypes.object.isRequired
 }
 
-export default ProjectItem
+export default Project
