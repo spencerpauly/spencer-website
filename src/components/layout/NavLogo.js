@@ -5,7 +5,7 @@ import "./NavLogo.css"
 export class NavLogo extends Component {
     render() {
         return (
-            <img className="logo" src={this.props.image} />
+            <img className="logo" src={this.props.image} alt="nav logo" />
         )
     }
 }

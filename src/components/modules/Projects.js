@@ -9,7 +9,7 @@ class Projects extends Component {
 
     getFeaturedProjects = () => {
         return this.props.projects.filter(project => project.featured === true).map((project) => (
-            <Project key={project.id} project={project}/>
+            <FeaturedProject key={project.id} project={project}/>
         ))
     }
 

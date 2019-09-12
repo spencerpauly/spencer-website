@@ -1,16 +1,39 @@
 .projectItem {
-    flex-grow: 1;
     max-width: 100%;
     padding: 1em;
-    display: flex;
+    display: inline-flex;
+    text-align: left;
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: 4em;
 }
 
 .projectItem h3 {
-    text-align: left;
-    flex-basis: 20%;
+    font-size: 1.2em;
 }
 
 .projectItem p {
-    text-align: left;
-    flex-basis: 20%;
+    font-size: .9em;
+}
+
+.alignRight {
+    float: right;
+}
+
+.projectBadge {
+    margin-right: .3em;
+}
+
+.projectButtons {
+    margin: 0em;
+}
+
+.projectButton {
+    margin-left: .3em;
+}
+
+.interactionButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
