@@ -4,54 +4,113 @@ import './App.css';
 import NavigationBar from './components/layout/NavigationBar';
 import Header from './components/layout/Header';
 import Projects from './components/modules/Projects';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class App extends Component {
     state = {
         projects: [
             {
-                title: "Scholarship Essay (up here temporarily)",
-                desc: "This is my scholarship essay for 2019.",
-                image: "./images/scholarship-1.png",
-                github: "https://thebomb.com",
-                project: "https://docs.google.com/document/d/1DDcnIAiLn1c67Fook3-bZQEQeA9SjHsm2061XhkNl1w/edit",
+                title: "SpencerPauly.com Website in React",
+                desc: "This website is my online portfolio programmed using web technologies and the React framework. It features a fully responsive front-end built for any screen size, and numerous backend features to make website management easier.",
+                
+                image: "./images/spencerpauly-1.png",
+                github: "https://github.com/spencerpauly/spencerpauly.com-main-website",
+                project: "http://spencerpauly.com",
                 status: "Work In Progress",
+                frameworks: [
+                    "React",
+                    "React-Bootstrap",
+                    "NodeJS",
+                    "Git"
+                    
+                ],
+                programmingLanguages: [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
                 featured: true,
-            },
-            {
-                title: "Old Non-React Version of spencerpauly.com",
-                desc: "This is the old version of my website. It looks quite a bit more polished than this version except it has a number of flaws that inspired me to use React and redesign the site.",
-                image: "./images/oldwebsite-1.png",
-                github: "",
-                project: "http://spencerpauly.com:3001",
-                status: "Completed 7/13/18",
-                featured: true,
-            },
-            {
-                title: "Start Of The World - Unity3D Mobile Game",
-                desc: "This is my work in progress mobile game being developed in Unity3D. It's going to function as an open-world 2D land-claiming game that overlays over the real-world map using the iPhone's GPS. The whole concept is still early in development but ETA is ~020.",
-                image: "./images/sotw-1.png",
-                github: "https://github.com/spencerpauly/Start-Of-The-World",
-                project: "https://github.com/spencerpauly/Start-Of-The-World",
-                status: "Work In Progress",
-                featured: false,
+                show: true,
             },
             {
                 title: "Spotify Statistics Webpage",
                 desc: "This is an online tool that utilizes the Spotify Web API to gather personalized data about your music listening trends. My app uses this data to allow you to see your favorite tracks and artists, then download these tracks into a personalized spotify playlist and does this all through a secure backend connection to Spotify's Web API with NodeJS.",
-                image: "./images/nn-1.png",
+                image: "./images/spotify-9.png",
                 github: "https://github.com/spencerpauly/Spotify-Statistics-Web-App",
-                project: "http://spencerpauly.com:3001/spotify",
-                status: "Completed 7/13/18",
+                project: "http://spencerpauly.com",
+                status: "Completed 12/20/2018",
+                frameworks: [
+                    "JQuery",
+                    "Bootstrap",
+                    "NodeJS",
+                    "Git",
+                ],
+                programmingLanguages: [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                ],
+                featured: true,
+                show: true,
+            },
+            {
+                title: "Start Of The World Mobile Game",
+                desc: "Start of The World is as an open-world 2D land-claiming game that overlays over the real-world map. It uses the phone's GPS to position a user properly in game world and is designed to work on both IOS and Android.",
+                image: "./images/sotw-1.png",
+                github: "https://github.com/spencerpauly/Start-Of-The-World",
+                project: "",
+                status: "Paused",
+                frameworks: [
+                    "Unity3D",
+                    "Design Patterns",
+                    "Component-Based Architecture",
+                ],
+                programmingLanguages: [
+                    "C#",
+                ],
                 featured: false,
+                show: true,
+            },
+            {
+                title: "POC Neural Network for String Encryption",
+                desc: "A C++ Neural Network made from scratch to encrypt and decrypt strings. This project features a custom-made matrix multiplication library and a custom .TSV file reader to automatically pass data as inputs to the neural network.",
+                image: "./images/nn-1.png",
+                github: "https://github.com/spencerpauly/Neural-Network-for-String-Encryption-and-Decryption",
+                project: "",
+                status: "Completed 6/8/2018",
+                frameworks: [
+                
+                ],
+                programmingLanguages: [
+                    "C++",
+                ],
+                featured: false,
+                show: true,
+            },
+            {
+                title: "Census Data Android App Group Project",
+                desc: "This project was completed as a group final project for Software Engineering. It's a mobile app that allows you to view census data from a variety of years from an android phone. The data is stored in a database with over 100,000 names and we created endpoints to efficiently search and display this data to users.",
+                image: "",
+                github: "https://github.com/spencerpauly/Software-Engineering-Census-Android-App",
+                project: "",
+                status: "Completed 5/13/2018",
+                frameworks: [
+                    "Android Studio",
+                    "Gradle",
+                    "NodeJS",
+                    "MongoDB",
+                    "JSON",
+                ],
+                programmingLanguages: [
+                    "Java",
+                ],
+                featured: false,
+                show: true,
             },
 
         ]
     }
-
-    // componentDidMount() {
-    //     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-    //         .then(res => this.setState({projects: res.data}));
-    // }
 
     getFeaturedProjects = () => {
         return this.state.projects.filter(project => project.featured === true);
