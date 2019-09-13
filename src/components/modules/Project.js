@@ -8,12 +8,12 @@ export class Project extends Component {
     
     githubButton = () => {
         return (this.props.project.github !== "") ?
-            <Button variant="primary" className="projectButton">Github</Button> : <span></span>
+            <Button href={this.props.project.github} target="_blank" variant="secondary" className="projectButton">Github</Button> : <span></span>
     }
 
     projectButton = () => {
         return (this.props.project.project !== "") ?
-            <Button variant="primary" className="projectButton">View Project</Button> : <span></span>
+            <Button href={this.props.project.project} target="_blank" variant="danger" className="projectButton">View Project</Button> : <span></span>
     }
 
     facts = () => {
@@ -24,16 +24,45 @@ export class Project extends Component {
         }
     }
 
-    badges = (badges) => {
+    
+
+    frameworkBadges = (badges) => {
         if (badges) {
             return badges.map((badge) => (
-                <Badge variant="primary" className="projectBadge">{badge}</Badge>
+                <Badge variant="danger" className="projectBadge">{badge}</Badge>
             ))    
         }
-        
     }
 
-    render() {
+    programmingLanguageBadges = (badges) => {
+        if (badges) {
+            return badges.map((badge) => (
+                <Badge variant="secondary" className="projectBadge">{badge}</Badge>
+            ))    
+        }
+    }
+
+    featuredProjectItem = () => {
+        return (
+            <div className="featuredProject">
+                <img src={this.props.project.image} alt="featured" />
+                <div className="featuredProjectDescription">
+                    <h3>{this.props.project.title}</h3>
+                    <p>{this.props.project.desc}</p>
+                    <div className="projectBadges">
+                        {this.frameworkBadges(this.props.project.frameworks)}
+                        {this.programmingLanguageBadges(this.props.project.programmingLanguages)}
+                    </div>
+                    <p>
+                        {this.projectButton()}
+                        {this.githubButton()}
+                    </p>
+                </div>
+            </div>
+        )
+    }
+
+    projectItem = () => {
         return (
             <div className="projectItem">
                 <div className="projectInfo">
@@ -44,8 +73,8 @@ export class Project extends Component {
                     </ul>
                     <div className="interactionButtons">
                         <div className="projectBadges">
-                            {this.badges(this.props.project.frameworks)}
-                            {this.badges(this.props.project.programmingLanguages)}
+                            {this.frameworkBadges(this.props.project.frameworks)}
+                            {this.programmingLanguageBadges(this.props.project.programmingLanguages)}
                         </div>
                         <div className="projectButtons">
                             {this.projectButton()}
@@ -54,6 +83,22 @@ export class Project extends Component {
                     </div>
                 </div>                    
             </div>
+        )
+    }
+
+    renderProjectData = () => {
+        if(this.props.project.featured === true) {
+            return this.featuredProjectItem();
+        } else {
+            return this.projectItem();
+        }
+    }
+
+    render() {
+        return ( 
+            <>
+                {this.renderProjectData()}
+            </>
         )
     }
 }

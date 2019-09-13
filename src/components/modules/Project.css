@@ -5,7 +5,7 @@
     text-align: left;
     margin-left: 15em;
     margin-right: 15em;
-    margin-top: 4em;
+    margin-top: 0em;
 }
 
 .projectItem h3 {
@@ -20,8 +20,14 @@
     float: right;
 }
 
-.projectBadge {
+.projectItem .projectBadge {
     margin-right: .3em;
+}
+
+.featuredProject .projectBadge {
+    float: left;
+    margin-right: .3em;
+    margin-bottom: 1em;
 }
 
 .projectButtons {
@@ -29,11 +35,40 @@
 }
 
 .projectButton {
-    margin-left: .3em;
+    margin-right: .3em;
 }
 
 .interactionButtons {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+  
+.featuredProject {
+    flex-grow: 1;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.featuredProjectDescription {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.featuredProject img {
+    max-height: 20em;
+    max-width: 20em;
+}
+
+.featuredProject h3 {
+    text-align: left;
+}
+
+.featuredProject p {
+    text-align: left;
 }

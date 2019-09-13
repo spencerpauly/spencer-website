@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import Project from './Project';
-import FeaturedProject from './FeaturedProject.js';
 import PropTypes from 'prop-types';
 import "./Projects.css"
 
@@ -9,7 +8,7 @@ class Projects extends Component {
 
     getFeaturedProjects = () => {
         return this.props.projects.filter(project => project.featured === true).map((project) => (
-            <FeaturedProject key={project.id} project={project}/>
+            <Project key={project.id} project={project}/>
         ))
     }
 
@@ -21,11 +20,13 @@ class Projects extends Component {
 
     render() {
         return (
-            <div className="projects">
-                {this.getFeaturedProjects()}
-                {this.getNonFeaturedProjects()}
+            <div className="projectSection">
+                <h2 >My Projects</h2>
+                <div className="projectItems">
+                    {this.getFeaturedProjects()}
+                    {this.getNonFeaturedProjects()}
+                </div>
             </div>
-            
         )
             
         

@@ -1,5 +1,11 @@
-.projects {
-    background: #eeeeee;
+.projectItems {
     display: flex;
     flex-wrap: wrap;
+}
+
+.projectSection {
+    text-align: center;
+    padding: 2em;
+    background: #eeeeee;
+
 }

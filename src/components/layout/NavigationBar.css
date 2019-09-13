@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
     padding: 1em;
-    background: #2196F3;
+    background: #c0392b;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,7 @@
 .navbar-left {
     text-align: left;
     display: flex;
+
 }
 
 .navbar-right {
