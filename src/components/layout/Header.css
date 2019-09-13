@@ -1,5 +1,5 @@
 .header {
-    background: #e74c3c;
+    background: #0984e3;
     min-height: 23em;
     width: 100%;
     color: white;
@@ -25,4 +25,11 @@
 .header p {
     font-size: .9em;
     max-width: 45em;
+}
+
+.btn-main {
+    background-color: #212121 !important;
+    color: white !important;
+    padding-left: 5.5em !important;
+    padding-right: 5.5em !important;
 }

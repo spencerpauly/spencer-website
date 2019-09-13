@@ -6,14 +6,14 @@ import "./Project.css"
 
 export class Project extends Component {
     
-    githubButton = () => {
-        return (this.props.project.github !== "") ?
-            <Button href={this.props.project.github} target="_blank" variant="secondary" className="projectButton">Github</Button> : <span></span>
-    }
-
     projectButton = () => {
         return (this.props.project.project !== "") ?
-            <Button href={this.props.project.project} target="_blank" variant="danger" className="projectButton">View Project</Button> : <span></span>
+            <Button href={this.props.project.project} target="_blank" variant="project" className="projectButton">View Project</Button> : <span></span>
+    }
+
+    githubButton = () => {
+        return (this.props.project.github !== "") ?
+            <Button href={this.props.project.github} target="_blank" variant="github" className="projectButton">Github</Button> : <span></span>
     }
 
     facts = () => {
@@ -24,12 +24,10 @@ export class Project extends Component {
         }
     }
 
-    
-
     frameworkBadges = (badges) => {
         if (badges) {
             return badges.map((badge) => (
-                <Badge variant="danger" className="projectBadge">{badge}</Badge>
+                <Badge variant="framework" className="projectBadge">{badge}</Badge>
             ))    
         }
     }
@@ -37,7 +35,7 @@ export class Project extends Component {
     programmingLanguageBadges = (badges) => {
         if (badges) {
             return badges.map((badge) => (
-                <Badge variant="secondary" className="projectBadge">{badge}</Badge>
+                <Badge variant="language" className="projectBadge">{badge}</Badge>
             ))    
         }
     }
