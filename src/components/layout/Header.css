@@ -1,14 +1,21 @@
 .header {
-    background: #2980b9;
-    height: 26em;
+    background: #e74c3c;
+    min-height: 23em;
     width: 100%;
     color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header div {
+    text-align: left;
+    align-self: center;
 }
 
 .header img {
     width: 15em;
-    margin-top: 3em;
     border-radius: 50%;
+    margin-right: 2em;
 }
 
 .header h1 {
@@ -16,5 +23,6 @@
 }
 
 .header p {
-    font-size: .7em;
+    font-size: .9em;
+    max-width: 45em;
 }
