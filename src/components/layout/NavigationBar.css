@@ -17,3 +17,9 @@
     text-align: right;
     display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar-right {
+        display: none;
+    }
+}

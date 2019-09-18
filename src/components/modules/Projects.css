@@ -1,11 +1,11 @@
 .projectItems {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projectSection {
     text-align: center;
     padding: 2em;
-    background: #eeeeee;
-
+    width: 100%;
 }

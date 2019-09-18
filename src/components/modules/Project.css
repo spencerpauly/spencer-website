@@ -1,11 +1,10 @@
 .projectItem {
-    max-width: 100%;
+    max-width: 60em;
     padding: 1em;
     display: inline-flex;
     text-align: left;
-    margin-left: 15em;
-    margin-right: 15em;
     margin-top: 0em;
+    
 }
 
 .projectItem h3 {
@@ -51,11 +50,11 @@
   
 .featuredProject {
     flex-grow: 1;
+    align-self: center;
     width: 100%;
     padding: 1em;
     display: flex;
-    margin-left: 15em;
-    margin-right: 15em;
+    max-width: 60em;
 }
 
 .featuredProjectDescription {
@@ -65,8 +64,8 @@
 }
 
 .featuredProject img {
-    max-height: 20em;
-    max-width: 20em;
+    width: 16em;
+    height: 16em;
 }
 
 .featuredProject h3 {
@@ -97,4 +96,11 @@
 .badge-language {
     background-color: #2d3436 !important;
     color: white !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .featuredProject img {
+        width: 10em;
+        height: 10em;
+    }
 }
