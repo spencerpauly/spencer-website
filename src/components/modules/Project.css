@@ -54,6 +54,7 @@
     width: 100%;
     padding: 1em;
     display: flex;
+    align-items: center;
     max-width: 60em;
 }
 
@@ -70,6 +71,7 @@
 
 .featuredProject h3 {
     text-align: left;
+    font-size: 1.6em;
 }
 
 .featuredProject p {
@@ -99,8 +101,18 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .featuredProject h3 {
+        font-size: 1.3em;
+    }
+    .featuredProject p {
+        font-size: .8em;
+    }
     .featuredProject img {
         width: 10em;
         height: 10em;
+    }
+
+    .featuredProject .projectBadges {
+        display: none;
     }
 }

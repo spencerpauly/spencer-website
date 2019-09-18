@@ -1,12 +1,27 @@
 import React from 'react'
+import Badge from 'react-boostrap/Badge'
 
 function About() {
+
+    skillBadges = (badges) => {
+        if (badges) {
+            return badges.map((badge) => (
+                <Badge variant="language" className="projectBadge">{badge}</Badge>
+            ))    
+        }
+    }
+
     return (
         <React.Fragment>
-            <h1>About</h1>
-            <p>This is the projects app thing v1.0.0</p>
+            {this.skillBadges(this.props.skills)}
         </React.Fragment>
     )
 }
+
+//PropTypes
+Project.propTypes = {
+    skills: PropTypes.object.isRequired
+}
+
 
 export default About;

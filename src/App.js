@@ -3,6 +3,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import NavigationBar from './components/layout/NavigationBar';
 import Header from './components/layout/Header';
+import About from './components/modules/About';
 import Projects from './components/modules/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -109,7 +110,38 @@ class App extends Component {
                 show: true,
             },
 
-        ]
+        ],
+
+        skills: [ 
+            {
+                framework: [
+                    "coding",
+                    "secondar",
+                    "test",
+                ]
+            },
+            {
+                language: [
+                    "coding",
+                    "secondar",
+                    "test",
+                ]
+            },
+            {
+                interpersonal: [
+                    "coding",
+                    "secondar",
+                    "test",
+                ]
+            },
+            {
+                development: [
+                    "coding",
+                    "secondar",
+                    "test",
+                ]
+            },
+        ],
     }
 
     getFeaturedProjects = () => {
@@ -126,6 +158,7 @@ class App extends Component {
                 <div className="App" >
                     <NavigationBar />
                     <Header/>
+                    <About/>
                     <Projects projects={this.state.projects}/>
                 </div>
             </Router>

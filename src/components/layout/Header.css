@@ -40,8 +40,8 @@
 @media only screen and (max-width: 600px) {
     .header div {
         text-align: center !important;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: .4em;
+        margin-right: .4em;
     }
 
     .header img {
