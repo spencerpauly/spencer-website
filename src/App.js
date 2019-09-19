@@ -112,35 +112,85 @@ class App extends Component {
 
         ],
 
-        skills: [ 
+        // skills: [ 
+        //     {
+        //         framework: [
+        //             "coding",
+        //             "secondar",
+        //             "test",
+        //         ]
+        //     },
+        //     {
+        //         language: [
+        //             "coding",
+        //             "secondar",
+        //             "test",
+        //         ]
+        //     },
+        //     {
+        //         interpersonal: [
+        //             "coding",
+        //             "secondar",
+        //             "test",
+        //         ]
+        //     },
+        //     {
+        //         development: [
+        //             "coding",
+        //             "secondar",
+        //             "test",
+        //         ]
+        //     },
+        // ],
+        skills: [
             {
-                framework: [
+                name: "frameworks",
+                items: [
                     "coding",
                     "secondar",
+                    "neverever",
+                    "coding",
+                    "fpimary",
                     "test",
-                ]
+                    "codd dfdfing",
+                ],
             },
             {
-                language: [
+                name: "languages",
+                items: [
                     "coding",
                     "secondar",
+                    "neverever",
+                    "coding",
+                    "fpimary",
                     "test",
-                ]
+                    "codd dfdfing",
+                ],
             },
             {
-                interpersonal: [
+                name: "development",
+                items: [
                     "coding",
                     "secondar",
+                    "neverever",
+                    "coding",
+                    "fpimary",
                     "test",
-                ]
+                    "codd dfdfing",
+                ],
             },
             {
-                development: [
+                name: "interpersonal",
+                items: [
                     "coding",
                     "secondar",
+                    "neverever",
+                    "coding",
+                    "fpimary",
                     "test",
-                ]
-            },
+                    "codd dfdfing",
+                ],
+            }
         ],
     }
 
@@ -158,7 +208,7 @@ class App extends Component {
                 <div className="App" >
                     <NavigationBar />
                     <Header/>
-                    <About/>
+                    <About skills={this.state.skills}/>
                     <Projects projects={this.state.projects}/>
                 </div>
             </Router>

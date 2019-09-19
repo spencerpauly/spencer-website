@@ -1,0 +1,42 @@
+.skillsList {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.skillsList h5 {
+    max-width: 30em;
+}
+
+.skillBadge {
+    margin-left: .1em;
+    margin-right: .1em;
+    font-size: 10em;
+    margin: .2em;
+}
+
+.badge-gold {
+    background: #f39c12;
+    color: white;
+}
+
+.badge-blue {
+    background: #3498db;
+    color: white;
+}
+
+.badge-green {
+    background: #1abc9c;
+    color: white;
+}
+
+.badge-other {
+    background: #9b59b6;
+    color: white;
+}
+
+.aboutSection {
+    text-align: center;
+    padding: 2em;
+    width: 100%;
+}
