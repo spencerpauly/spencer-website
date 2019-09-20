@@ -142,56 +142,190 @@ class App extends Component {
         //         ]
         //     },
         // ],
+
         skills: [
             {
-                name: "frameworks",
-                items: [
-                    "coding",
-                    "secondar",
-                    "neverever",
-                    "coding",
-                    "fpimary",
-                    "test",
-                    "codd dfdfing",
-                ],
+                name: "Agile Development",
+                type: "development",
             },
             {
-                name: "languages",
-                items: [
-                    "coding",
-                    "secondar",
-                    "neverever",
-                    "coding",
-                    "fpimary",
-                    "test",
-                    "codd dfdfing",
-                ],
+                name: "C#",
+                type: "language",
             },
             {
-                name: "development",
-                items: [
-                    "coding",
-                    "secondar",
-                    "neverever",
-                    "coding",
-                    "fpimary",
-                    "test",
-                    "codd dfdfing",
-                ],
+                name: "Project Management",
+                type: "interpersonal",
             },
             {
-                name: "interpersonal",
-                items: [
-                    "coding",
-                    "secondar",
-                    "neverever",
-                    "coding",
-                    "fpimary",
-                    "test",
-                    "codd dfdfing",
-                ],
-            }
-        ],
+                name: "Problem Analysis",
+                type: "interpersonal",
+            },
+
+
+
+
+
+            {
+                name: "Simple MVC Architecture",
+                type: "development",
+            },
+            {
+                name: "JavaScript",
+                type: "language",
+            },
+            {
+                name: "Self-Motivated",
+                type: "interpersonal",
+            },
+            {
+                name: "Teamwork",
+                type: "interpersonal",
+            },
+
+            {
+                name: "Design Patterns",
+                type: "development",
+            },
+
+
+
+
+            {
+                name: "Python",
+                type: "language",
+            },
+            {
+                name: "C++",
+                type: "language",
+            },
+            {
+                name: "Bootstrap",
+                type: "framework",
+            },
+            {
+                name: "Goal Setting",
+                type: "interpersonal",
+            },
+            {
+                name: "HTML/CSS",
+                type: "language",
+            },
+            {
+                name: "Java",
+                type: "language",
+            },
+
+
+            {
+                name: "Unity3D",
+                type: "framework",
+            },
+            {
+                name: "Android Development",
+                type: "framework",
+            },
+            
+
+            {
+                name: "Gradle",
+                type: "framework",
+            },
+            {
+                name: "MongoDB",
+                type: "framework",
+            },
+            {
+                name: "Git",
+                type: "framework",
+            },
+            {
+                name: "SVN",
+                type: "framework",
+            },
+            {
+                name: "Photoshop",
+                type: "framework",
+            },
+
+            {
+                name: "JQuery",
+                type: "framework",
+            },
+
+
+
+
+
+
+            {
+                name: "React",
+                type: "framework",
+            },
+            {
+                name: "NodeJS",
+                type: "framework",
+            },
+            {
+                name: ".NET Framework",
+                type: "framework",
+            },
+            {
+                name: "JSON",
+                type: "framework",
+            },
+            
+
+        ]
+        // skills: [
+        //     {
+        //         name: "frameworks",
+        //         items: [
+        //             "coding",
+        //             "secondar",
+        //             "neverever",
+        //             "coding",
+        //             "fpimary",
+        //             "test",
+        //             "codd dfdfing",
+        //         ],
+        //     },
+        //     {
+        //         name: "languages",
+        //         items: [
+        //             "coding",
+        //             "secondar",
+        //             "neverever",
+        //             "coding",
+        //             "fpimary",
+        //             "test",
+        //             "codd dfdfing",
+        //         ],
+        //     },
+        //     {
+        //         name: "development",
+        //         items: [
+        //             "coding",
+        //             "secondar",
+        //             "neverever",
+        //             "coding",
+        //             "fpimary",
+        //             "test",
+        //             "codd dfdfing",
+        //         ],
+        //     },
+        //     {
+        //         name: "interpersonal",
+        //         items: [
+        //             "coding",
+        //             "secondar",
+        //             "neverever",
+        //             "coding",
+        //             "fpimary",
+        //             "test",
+        //             "codd dfdfing",
+        //         ],
+        //     }
+        // ],
     }
 
     getFeaturedProjects = () => {
@@ -208,8 +342,11 @@ class App extends Component {
                 <div className="App" >
                     <NavigationBar />
                     <Header/>
-                    <About skills={this.state.skills}/>
-                    <Projects projects={this.state.projects}/>
+                    <section className="content">
+                        <About skills={this.state.skills}/>
+                        <Projects projects={this.state.projects}/>
+                    </section>
+                    
                 </div>
             </Router>
         );

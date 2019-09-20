@@ -1,5 +1,4 @@
 .projectItem {
-    max-width: 60em;
     padding: 1em;
     display: inline-flex;
     text-align: left;
@@ -55,7 +54,6 @@
     padding: 1em;
     display: flex;
     align-items: center;
-    max-width: 60em;
 }
 
 .featuredProjectDescription {
@@ -90,12 +88,12 @@
     size: 20em;
 }
 
-.badge-framework {
+.badge-primaryItem {
     background-color: #0984e3 !important;
     color: white !important;
 }
 
-.badge-language {
+.badge-secondaryItem {
     background-color: #2d3436 !important;
     color: white !important;
 }

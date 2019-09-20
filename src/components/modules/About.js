@@ -4,7 +4,13 @@ import Badge from 'react-bootstrap/Badge'
 import './About.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { graduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons'
+import { faBookReader } from '@fortawesome/free-solid-svg-icons'
+
+
 
 export class About extends Component {
 
@@ -76,6 +82,13 @@ export class About extends Component {
 
     }
 
+    drawAllBadgesSimple = (skillsObject) => {
+        return skillsObject.map((skillObject) => (
+            <Badge variant={skillObject.type} className="skillBadge">{skillObject.name}</Badge>
+        ))
+
+    }
+
     render() {
         return ( 
             // <div className="skillsList">
@@ -92,7 +105,78 @@ export class About extends Component {
 
             <div className="aboutSection">
                 <h2>About Me</h2>
-                <p><FontAwesomeIcon icon={graduationCap} /> University of Minnesota Duluth</p>
+                <div className="aboutSectionFlexbox">
+                    <div className="quickInfo">
+                        <p>
+                            <span className="fa-layers fa-fw iconWrapper">
+                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faGraduationCap} inverse transform="shrink-8"/>
+                            </span> 
+                            <span className="iconText"><b>University of Minnesota Duluth</b></span>                        
+                        </p>
+                        <p>
+                            <span className="fa-layers fa-fw iconWrapper">
+                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faBook} inverse transform="shrink-8"/>
+                            </span> 
+                            <span className="iconText"><b>Computer Science B.S.</b>
+                            <ul className="relevantCourses">
+                                <li>Marketing Minor</li>
+                            </ul>
+                            </span>
+                        </p>
+                        <p>
+                            <span className="fa-layers fa-fw iconWrapper">
+                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faCalendarWeek} inverse transform="shrink-8"/>
+                            </span> 
+                            <span className="iconText"><b>Graduation Year 2021</b></span>
+                        </p>
+                        <p>
+                            <span className="fa-layers fa-fw iconWrapper">
+                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faBookReader} inverse transform="shrink-8"/>
+                            </span> 
+                            <span className="iconText"><b>Relevant Courses:</b> 
+                            <ul className="relevantCourses">
+                                <li>Software Engineering</li>
+                                <li>Computer Networks</li>
+                                <li>Operating Systems</li>
+                                <li>Software Analysis and Design</li>
+                                <li>Computer Science II</li>
+                                <li>Computer Science I</li>
+                                <li>Calculus III</li>
+                                <li>Physics II</li>
+                                <li>Software Analysis and Design</li>
+                            </ul>
+                            </span>                        
+                        </p>
+                    </div>
+                    <div className="bio">
+                        <p>
+                            <b>Objective: </b> 
+                            As a self-motivated, goal-oriented undergraduate student in computer science, I'm currently seeking an internship position for the summer of 2020 that will allow me to build products on a commercial scale. I have completed numerous personal projects, advanced courses, and previous internships that I believe would make me the perfect candidate for a software engineering internship.
+                        </p>
+                        <br />
+                        <p>
+                            <b>Skills: </b>
+                            I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in.
+                        </p>
+                        <div class="skillsBadgeContainer">
+                            {this.drawAllBadgesSimple(this.props.skills)}
+                        </div>
+                        <div class="skillsLegend">
+                            <ul>
+                                <li class="frameworkColor"><FontAwesomeIcon icon={faCircle}/> <span>Technologies and Frameworks</span></li>
+                                <li class="languageColor"><FontAwesomeIcon icon={faCircle}/> <span>Programming Languages</span></li>
+                                <li class="developmentColor"><FontAwesomeIcon icon={faCircle}/> <span>Software Development Strategies</span></li>
+                                <li class="interpersonalColor"><FontAwesomeIcon icon={faCircle}/> <span>Soft Skills</span></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         )

@@ -15,28 +15,145 @@
     margin: .2em;
 }
 
-.badge-gold {
-    background: #f39c12;
-    color: white;
-}
-
-.badge-blue {
-    background: #3498db;
-    color: white;
-}
-
-.badge-green {
-    background: #1abc9c;
-    color: white;
-}
-
-.badge-other {
-    background: #9b59b6;
-    color: white;
-}
-
 .aboutSection {
     text-align: center;
     padding: 2em;
+    float: center;
+    margin: 0 auto;
     width: 100%;
 }
+
+.aboutSection h2 {
+    padding-bottom: 1em;
+    padding-top: .3em;
+}
+
+.aboutSectionFlexbox {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+
+}
+
+.quickInfo {
+    flex-grow: 1;
+    text-align: left;
+    flex-basis: 60%;
+}
+
+.quickInfo p {
+    margin-bottom: .6em;
+    margin-right: 4em;
+}
+
+.bio {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.bio p {
+    text-align: left;
+}
+
+.badge-framework {
+    background-color: #1abc9c !important;
+    color: white !important;
+}
+
+.badge-language {
+    background-color: #f39c12 !important;
+    color: white !important;
+}
+
+.badge-development {
+    background-color: #9b59b6 !important;
+    color: white !important;
+}
+
+.badge-interpersonal {
+    background-color: #3498db !important;
+    color: white !important;
+}
+
+.skillsBadgeContainer {
+    max-width: 25em;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.skillsLegend {
+    padding-top: 1em;
+    font-size: .8em;
+    text-align: left;
+    line-height: 1.3em;
+    margin-left: 3em;
+}
+
+.skillsLegend ul {
+    list-style: none;
+}
+
+.skillsLegend span {
+    color: black;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1000px) {
+    .skillsBadgeContainer {
+        display: none;
+    }
+    .skillsLegend {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .quickInfo {
+        display: none;
+    }
+}
+
+.frameworkColor {
+    color: #1abc9c !important;
+}
+
+.languageColor {
+    color: #f39c12 !important;
+
+}
+
+.developmentColor {
+    color: #9b59b6 !important;
+
+}
+
+.interpersonalColor {
+    color: #3498db !important;
+
+}
+
+.iconWrapper {
+    font-size: 2em;
+    margin-right: .2em;
+}
+
+.quickInfo p span {
+    vertical-align: middle;
+    
+}
+
+.iconText {
+    font-size: 1em;
+    vertical-align: middle;
+
+}
+
+.relevantCourses {
+    list-style: none;
+    margin-left: 6em;
+    font-size: .8em;
+}
+

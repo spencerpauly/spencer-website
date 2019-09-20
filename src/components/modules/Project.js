@@ -27,7 +27,7 @@ export class Project extends Component {
     frameworkBadges = (badges) => {
         if (badges) {
             return badges.map((badge) => (
-                <Badge variant="framework" className="projectBadge">{badge}</Badge>
+                <Badge variant="primaryItem" className="projectBadge">{badge}</Badge>
             ))    
         }
     }
@@ -35,7 +35,7 @@ export class Project extends Component {
     programmingLanguageBadges = (badges) => {
         if (badges) {
             return badges.map((badge) => (
-                <Badge variant="language" className="projectBadge">{badge}</Badge>
+                <Badge variant="secondaryItem" className="projectBadge">{badge}</Badge>
             ))    
         }
     }
