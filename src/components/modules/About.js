@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Badge from 'react-bootstrap/Badge'
 import './About.css'
+import Button from 'react-bootstrap/Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
@@ -154,27 +155,56 @@ export class About extends Component {
                     </div>
                     <div className="bio">
                         <p>
-                            <b>Objective: </b> 
-                            As a self-motivated, goal-oriented undergraduate student in computer science, I'm currently seeking an internship position for the summer of 2020 that will allow me to build products on a commercial scale. I have completed numerous personal projects, advanced courses, and previous internships that I believe would make me the perfect candidate for a software engineering internship.
+                            <b>Objective</b> 
+                            <p>
+                                As a self-motivated, goal-oriented undergraduate student in computer science, I'm currently seeking an internship position for the summer of 2020 that will allow me to build products on a commercial scale. I have completed numerous personal projects, advanced courses, and previous internships that I believe would make me the perfect candidate for a software engineering internship.
+                            </p>
                         </p>
                         <br />
                         <p>
-                            <b>Skills: </b>
-                            I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in.
+                            <b>Skills</b>
+                            <p>
+                                I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in.
+                            </p>
                         </p>
                         <div class="skillsBadgeContainer">
                             {this.drawAllBadgesSimple(this.props.skills)}
                         </div>
                         <div class="skillsLegend">
                             <ul>
-                                <li class="frameworkColor"><FontAwesomeIcon icon={faCircle}/> <span>Technologies and Frameworks</span></li>
-                                <li class="languageColor"><FontAwesomeIcon icon={faCircle}/> <span>Programming Languages</span></li>
                                 <li class="developmentColor"><FontAwesomeIcon icon={faCircle}/> <span>Software Development Strategies</span></li>
+                                <li class="languageColor"><FontAwesomeIcon icon={faCircle}/> <span>Programming Languages</span></li>
                                 <li class="interpersonalColor"><FontAwesomeIcon icon={faCircle}/> <span>Soft Skills</span></li>
+                                <li class="frameworkColor"><FontAwesomeIcon icon={faCircle}/> <span>Technologies and Frameworks</span></li>
 
                             </ul>
-
                         </div>
+                        <p class="workExperience">
+                            <b>Work Experience</b>
+                            <p>
+                               
+                               <ul>
+                                   <li>
+                                        2019 - Software Engineering Intern - Trane - White Bear Lake, MN
+                                   </li>
+                                   <li>
+                                       2019 - IT Intern - Trex Commercial Products
+                                   </li>
+                               </ul>
+                            </p>
+                        </p>
+                        <p>
+                            <p>
+                                If you want to learn more feel free to click one of the links below. I will respond to communications usually within
+                                48 hours so feel free to contact me. Thanks!
+
+                            </p>
+                            <p>
+                                <Button href="" target="_blank" variant="github" className="moreInfoButton">View Resume (.pdf)</Button>
+
+                            </p>
+                        </p>
+
                     </div>
                 </div>
                 

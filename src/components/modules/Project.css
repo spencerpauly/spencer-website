@@ -114,3 +114,12 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .featuredProject img {
+        width: 2em;
+        height: 2em;
+        align-self: flex-start;
+        margin-top: .5em;
+    }
+}

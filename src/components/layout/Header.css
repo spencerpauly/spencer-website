@@ -1,6 +1,7 @@
 .header {
     background: #0984e3;
-    min-height: 23em;
+    min-height: 20em;
+    padding-top: 3em;
     width: 100%;
     color: white;
     display: flex;
@@ -26,7 +27,7 @@
 
 .header p {
     font-size: .9em;
-    max-width: 45em;
+    max-width: 55em;
     margin-right: 2em;
 }
 
@@ -40,11 +41,45 @@
 @media only screen and (max-width: 600px) {
     .header div {
         text-align: center !important;
-        margin-left: .4em;
+        margin-left: 3em;
         margin-right: .4em;
+        
+    }
+
+    .header img {
+        width: 10em;
+    }
+
+}
+
+.socialMediaButtons {
+    min-width: 20em;
+    width: 100%;
+    background: #0984e3;
+    text-align: right;
+    padding-right: .3em;
+    padding-bottom: .3em;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 900px) {
+    .socialMediaButtons {
+        text-align: center;
+    }
+
+    .header {
+        min-height: 24em;
+        padding-bottom: 1em;
     }
 
     .header img {
         display: none;
+    }
+
+    .header div {
+        text-align: center !important;
+        margin-left: .4em;
+        margin-right: .4em;
+        
     }
 }

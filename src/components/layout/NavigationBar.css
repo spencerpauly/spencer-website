@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 400;
 }
 
 .navbar-left {
@@ -23,3 +24,8 @@
         display: none;
     }
 }
+
+.navItem:hover {
+    color: #0984e3;
+    text-decoration:none;
+  }

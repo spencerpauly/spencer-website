@@ -23,7 +23,8 @@ class App extends Component {
                     "React",
                     "React-Bootstrap",
                     "NodeJS",
-                    "Git"
+                    "Git",
+                    "FontAwesome",
                     
                 ],
                 programmingLanguages: [
@@ -149,10 +150,6 @@ class App extends Component {
                 type: "development",
             },
             {
-                name: "C#",
-                type: "language",
-            },
-            {
                 name: "Project Management",
                 type: "interpersonal",
             },
@@ -214,7 +211,10 @@ class App extends Component {
                 name: "Java",
                 type: "language",
             },
-
+            {
+                name: "C#",
+                type: "language",
+            },
 
             {
                 name: "Unity3D",
