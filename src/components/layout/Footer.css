@@ -1,0 +1,38 @@
+.footer {
+    background: #212121;
+    float: right;
+    color: white;
+    width: 100%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.footerCopyright {
+    background: #272727;
+    float: right;
+    color: white;
+    width: 100%;
+    text-align: right;
+    vertical-align: middle;
+    padding: 1em;
+}
+
+.footerImg {
+    float: center;
+    max-width: 3em;
+    margin: auto;
+    margin-top: 9em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+.footerImgImg {
+    max-width: 3em;
+    margin: auto;
+
+
+}
+
+.sketchyhardcoding {
+    color: #272727;
+}

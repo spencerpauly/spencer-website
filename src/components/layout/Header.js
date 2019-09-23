@@ -35,22 +35,31 @@ function Header() {
                 
             </header>
             <div class="socialMediaButtons">
-                <span className="fa-layers fa-fw iconWrapper">
-                    <FontAwesomeIcon icon={faCircle} color="#212121" />
-                    <FontAwesomeIcon icon={faGithub} color="" inverse transform="shrink-8"/>
-                </span> 
-                <span className="fa-layers fa-fw iconWrapper">
-                    <FontAwesomeIcon icon={faCircle} color="#212121" />
-                    <FontAwesomeIcon icon={faLinkedinIn} inverse transform="shrink-8"/>
-                </span> 
-                <span className="fa-layers fa-fw iconWrapper">
-                    <FontAwesomeIcon icon={faCircle} color="#212121" />
-                    <FontAwesomeIcon icon={faInstagram} inverse transform="shrink-8"/>
-                </span> 
-                <span className="fa-layers fa-fw iconWrapper">
-                    <FontAwesomeIcon icon={faCircle} color="#212121" />
-                    <FontAwesomeIcon icon={faSpotify} inverse transform="shrink-8"/>
-                </span> 
+                <a href="/" target="_blank">
+                    <span className="fa-layers fa-fw iconWrapper">
+                        <FontAwesomeIcon icon={faCircle} color="#212121" />
+                        <FontAwesomeIcon icon={faGithub} className="githubIcon" inverse transform="shrink-8"/>
+                    </span> 
+                </a>
+                <a href="/" target="_blank">
+                    <span className="fa-layers fa-fw iconWrapper">
+                        <FontAwesomeIcon icon={faCircle} color="#212121" />
+                        <FontAwesomeIcon icon={faLinkedinIn} className="linkedinIcon" inverse transform="shrink-8"/>
+                    </span> 
+                </a>
+                <a href="/" target="_blank">
+                    <span className="fa-layers fa-fw iconWrapper">
+                        <FontAwesomeIcon icon={faCircle} color="#212121" />
+                        <FontAwesomeIcon icon={faInstagram} className="instagramIcon" inverse transform="shrink-8"/>
+                    </span>
+                </a>
+                <a href="/" target="_blank">
+                    <span className="fa-layers fa-fw iconWrapper">
+                        <FontAwesomeIcon icon={faCircle} color="#212121"/>
+                        <FontAwesomeIcon icon={faSpotify} className="spotifyIcon" inverse transform="shrink-8"/>
+                    </span> 
+                </a>
+            
             </div>
         </>
     )

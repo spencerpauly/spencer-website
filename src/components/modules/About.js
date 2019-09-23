@@ -143,12 +143,13 @@ export class About extends Component {
                                 <li>Software Engineering</li>
                                 <li>Computer Networks</li>
                                 <li>Operating Systems</li>
+                                <li>Artificial Intelligence</li>
                                 <li>Software Analysis and Design</li>
                                 <li>Computer Science II</li>
                                 <li>Computer Science I</li>
                                 <li>Calculus III</li>
                                 <li>Physics II</li>
-                                <li>Software Analysis and Design</li>
+                                <li>Public Speaking</li>
                             </ul>
                             </span>                        
                         </p>
@@ -179,7 +180,7 @@ export class About extends Component {
 
                             </ul>
                         </div>
-                        <p class="workExperience">
+                        {/* <p class="workExperience">
                             <b>Work Experience</b>
                             <p>
                                
@@ -192,7 +193,7 @@ export class About extends Component {
                                    </li>
                                </ul>
                             </p>
-                        </p>
+                        </p> */}
                         <p>
                             <p>
                                 If you want to learn more feel free to click one of the links below. I will respond to communications usually within

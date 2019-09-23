@@ -5,6 +5,8 @@ import NavigationBar from './components/layout/NavigationBar';
 import Header from './components/layout/Header';
 import About from './components/modules/About';
 import Projects from './components/modules/Projects';
+import ContactMe from './components/modules/ContactMe';
+import Footer from './components/layout/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -167,8 +169,8 @@ class App extends Component {
                 type: "development",
             },
             {
-                name: "JavaScript",
-                type: "language",
+                name: "Goal Setting",
+                type: "interpersonal",
             },
             {
                 name: "Self-Motivated",
@@ -200,8 +202,12 @@ class App extends Component {
                 type: "framework",
             },
             {
-                name: "Goal Setting",
-                type: "interpersonal",
+                name: "MongoDB",
+                type: "framework",
+            },
+            {
+                name: "React",
+                type: "framework",
             },
             {
                 name: "HTML/CSS",
@@ -230,10 +236,12 @@ class App extends Component {
                 name: "Gradle",
                 type: "framework",
             },
+
             {
-                name: "MongoDB",
-                type: "framework",
+                name: "JavaScript",
+                type: "language",
             },
+
             {
                 name: "Git",
                 type: "framework",
@@ -257,10 +265,7 @@ class App extends Component {
 
 
 
-            {
-                name: "React",
-                type: "framework",
-            },
+
             {
                 name: "NodeJS",
                 type: "framework",
@@ -345,8 +350,10 @@ class App extends Component {
                     <section className="content">
                         <About skills={this.state.skills}/>
                         <Projects projects={this.state.projects}/>
+                        
                     </section>
-                    
+                    <ContactMe />
+                    <Footer />
                 </div>
             </Router>
         );

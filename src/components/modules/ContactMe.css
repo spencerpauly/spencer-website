@@ -1,0 +1,26 @@
+.contactMeSection {
+    background: #0984e3;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 42em;
+    color: white;
+}
+
+.contactFormWrapper {
+    max-width: 40em;
+    margin: auto;
+}
+
+.contactForm {
+    text-align: left;
+}
+
+.btn-formSubmit {
+    float: right;
+    background: #212121 !important;
+    color: white !important;
+}
+
+.contactForm p {
+    padding-top: 2em;
+}
