@@ -104,7 +104,7 @@ export class About extends Component {
             //     </h5>
             // </div>
 
-            <div className="aboutSection">
+            <div id="about" className="aboutSection">
                 <h2>About Me</h2>
                 <div className="aboutSectionFlexbox">
                     <div className="quickInfo">
@@ -156,15 +156,15 @@ export class About extends Component {
                     </div>
                     <div className="bio">
                         <p>
-                            <b>Objective</b> 
-                            <p>
+                            <h3>Objective</h3> 
+                            <p className="aboutMeText">
                                 As a self-motivated, goal-oriented undergraduate student in computer science, I'm currently seeking an internship position for the summer of 2020 that will allow me to build products on a commercial scale. I have completed numerous personal projects, advanced courses, and previous internships that I believe would make me the perfect candidate for a software engineering internship.
                             </p>
                         </p>
                         <br />
                         <p>
-                            <b>Skills</b>
-                            <p>
+                            <h3>Skills</h3> 
+                            <p className="aboutMeText">
                                 I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in.
                             </p>
                         </p>
@@ -195,13 +195,13 @@ export class About extends Component {
                             </p>
                         </p> */}
                         <p>
-                            <p>
+                            <p className="aboutMeText">
                                 If you want to learn more feel free to click one of the links below. I will respond to communications usually within
                                 48 hours so feel free to contact me. Thanks!
 
                             </p>
                             <p>
-                                <Button href="" target="_blank" variant="github" className="moreInfoButton">View Resume (.pdf)</Button>
+                                <Button href="https://drive.google.com/file/d/1QD_nj1-3Aq9fnJDxcjPZWCPZfUn15Byd/view?usp=sharing/" target="_blank" variant="github" className="moreInfoButton">View Resume (.pdf)</Button>
 
                             </p>
                         </p>

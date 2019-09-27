@@ -154,8 +154,8 @@
 
 .relevantCourses {
     list-style: none;
-    margin-left: 6em;
-    font-size: .8em;
+    margin-left: 4.3em;
+    font-size: .9em;
 }
 
 .workExperience ul {
@@ -166,4 +166,15 @@
 .moreInfoButton {
     padding-right: 3em !important;
     padding-left: 3em !important;
+}
+
+.aboutMeText {
+    font-size: .9em;
+}
+
+.bio h3 {
+    font-size: 1.1em;
+    padding-bottom: 0;
+    margin-bottom: .2em;
+    font-weight: bold;
 }

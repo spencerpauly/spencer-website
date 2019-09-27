@@ -28,32 +28,32 @@ function Header() {
                         This website is the solution. It's built using the React framework on the front end and NodeJS, Nginx, and MongoDB for the backend. Enjoy!
                         
                     </p>
-                    <Button variant="main">Contact Me</Button>
+                    <Button href="#contact" variant="main">Contact Me</Button>
                 </div>
                
                 
                 
             </header>
             <div class="socialMediaButtons">
-                <a href="/" target="_blank">
+                <a href="https://github.com/spencerpauly/" rel="noopener noreferrer" target="_blank">
                     <span className="fa-layers fa-fw iconWrapper">
                         <FontAwesomeIcon icon={faCircle} color="#212121" />
                         <FontAwesomeIcon icon={faGithub} className="githubIcon" inverse transform="shrink-8"/>
                     </span> 
                 </a>
-                <a href="/" target="_blank">
+                <a href="https://www.linkedin.com/in/spencer-pauly-24803278/" rel="noopener noreferrer" target="_blank">
                     <span className="fa-layers fa-fw iconWrapper">
                         <FontAwesomeIcon icon={faCircle} color="#212121" />
                         <FontAwesomeIcon icon={faLinkedinIn} className="linkedinIcon" inverse transform="shrink-8"/>
                     </span> 
                 </a>
-                <a href="/" target="_blank">
+                <a href="https://www.instagram.com/spencer_pauly/" rel="noopener noreferrer" target="_blank">
                     <span className="fa-layers fa-fw iconWrapper">
                         <FontAwesomeIcon icon={faCircle} color="#212121" />
                         <FontAwesomeIcon icon={faInstagram} className="instagramIcon" inverse transform="shrink-8"/>
                     </span>
                 </a>
-                <a href="/" target="_blank">
+                <a href="https://open.spotify.com/user/1265902628/" rel="noopener noreferrer" target="_blank">
                     <span className="fa-layers fa-fw iconWrapper">
                         <FontAwesomeIcon icon={faCircle} color="#212121"/>
                         <FontAwesomeIcon icon={faSpotify} className="spotifyIcon" inverse transform="shrink-8"/>

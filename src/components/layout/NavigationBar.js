@@ -14,9 +14,9 @@ export class NavigationBar extends Component {
                 </div>
                 <div>
                     <div className="navbar-right">
-                        <NavItem name="About Me" className="navItem" link="/about" />
-                        <NavItem name="My Projects" className="navItem" link="/projects" />
-                        <NavItem name="Contact Me" className="navItem" link="/contact" />
+                        <NavItem name="About Me" className="navItem" href="#about" />
+                        <NavItem name="My Projects" className="navItem" link="#projects" />
+                        <NavItem name="Contact Me" className="navItem" link="#contact" />
                     </div>
                 </div>
                 

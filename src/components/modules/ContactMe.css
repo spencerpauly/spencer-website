@@ -15,6 +15,10 @@
     text-align: left;
 }
 
+.contactForm p {
+    font-size: .9em;
+}
+
 .btn-formSubmit {
     float: right;
     background: #212121 !important;
@@ -23,4 +27,15 @@
 
 .contactForm p {
     padding-top: 2em;
+}
+
+.formLabel {
+    margin-left: .7em;
+    font-weight: bold;
+}
+
+.contactFormForm {
+    max-width: 34em;
+    padding-top: 1em;
+    margin: auto;
 }
