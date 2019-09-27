@@ -24,7 +24,7 @@ export class ContactMe extends Component {
                                 </Form.Group>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label className="formLabel">Email address</Form.Label>
-                                    <Form.Control type="email" name="_replyto" placeholder="Enter email" />
+                                    <Form.Control type="email" name="_replyto" placeholder="Enter email here" />
                                 </Form.Group>
                                 <Form.Group controlId="exampleForm.ControlTextarea1">
                                     <Form.Label className="formLabel">Message</Form.Label>

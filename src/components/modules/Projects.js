@@ -20,8 +20,8 @@ class Projects extends Component {
 
     render() {
         return (
-            <div className="projectSection">
-                <h2 id="projects" >My Projects</h2>
+            <div id="projects" className="projectSection">
+                <h2>My Projects</h2>
                 <div className="projectItems">
                     <div className="featuredProjectItems">
                         {this.getFeaturedProjects()}

@@ -10,7 +10,9 @@ class Footer extends Component {
                     <span className="sketchyhardcoding">This is an easter egg, yay!</span>
                 </div>
                 <div class="footerImg">
-                    <Image class="footerImgImg" src="./images/logo-secondary.png" fluid />
+                    <a href="#header">
+                        <Image class="footerImgImg" src="./images/logo-secondary.png" fluid />
+                    </a>
                 </div>
                 <div className="footerCopyright">
                     <span>Copyright Spencer Pauly 2019</span>

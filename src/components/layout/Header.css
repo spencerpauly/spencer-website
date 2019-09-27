@@ -66,6 +66,8 @@
     .socialMediaButtons {
         text-align: center;
         padding-right: 0em;
+        margin-left: 0em;
+        min-width: 10em;
 
     }
 

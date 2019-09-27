@@ -36,3 +36,14 @@
 .sketchyhardcoding {
     color: #272727;
 }
+
+@media only screen and (max-width: 500px) {
+    .footerImg {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .footerCopyright {
+        display: none;
+    }
+}

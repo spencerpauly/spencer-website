@@ -14,7 +14,7 @@ import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 function Header() {
     return (
         <>
-            <header className='header'>
+            <header id="header" className='header'>
                 <div>
                     <img src="./images/avatar-1.jpg" alt="header"/>
                 </div>
