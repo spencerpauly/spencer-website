@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Header.css"
 import Button from "react-bootstrap/Button";
+import avatar from 'assets/images/avatar-1.jpg';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +18,7 @@ function Header() {
         <>
             <header id="header" className='header'>
                 <div>
-                    <img src="./images/avatar-1.jpg" alt="header"/>
+                    <img src={avatar} alt="header"/>
                 </div>
 
                 <div>

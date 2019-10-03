@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import "./NavigationBar.css"
+import logo from 'assets/images/logo-secondary.png';
 
 export class NavigationBar extends Component {
 
@@ -10,7 +11,7 @@ export class NavigationBar extends Component {
             <Navbar className="navbar" collapseOnSelect expand="lg" bg="black" variant="dark">
                 <Navbar.Brand href="/">
                     <img
-                        src="./images/logo-secondary.png"
+                        src={logo}
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
