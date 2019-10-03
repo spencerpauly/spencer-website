@@ -43,7 +43,7 @@
     flex-basis: 47%;
 }
 
-.quickInfo p {
+.quickInfo div {
     margin-bottom: .6em;
     margin-right: 4em;
 }
@@ -141,7 +141,7 @@
     margin-right: .2em;
 }
 
-.quickInfo p span {
+.quickInfo div span {
     vertical-align: middle;
     
 }

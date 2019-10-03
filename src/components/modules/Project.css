@@ -62,8 +62,8 @@
     padding: 10px;
 }
 
-.featuredProject img {
-    width: 16em;
+.projectImage {
+    width: auto;
     height: 16em;
 }
 
@@ -105,7 +105,7 @@
     .featuredProject p {
         font-size: .8em;
     }
-    .featuredProject img {
+    .projectImage {
         width: 10em;
         height: 10em;
     }
@@ -116,7 +116,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .featuredProject img {
+    .projectImage {
         width: 2em;
         height: 2em;
         align-self: flex-start;

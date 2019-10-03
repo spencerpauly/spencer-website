@@ -1,8 +1,7 @@
 import React from 'react';
 import "./Header.css"
 import Button from "react-bootstrap/Button";
-import avatar from 'assets/images/avatar-1.jpg';
-
+import {Image} from 'cloudinary-react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
@@ -11,14 +10,12 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 
-
-
 function Header() {
     return (
         <>
             <header id="header" className='header'>
                 <div>
-                    <img src={avatar} alt="header"/>
+                    <Image className="headerImg" cloudName="spencerpauly" publicId="assets/avatar-1_lwtpeq.jpg" width="500" crop="scale"/>
                 </div>
 
                 <div>
@@ -36,7 +33,7 @@ function Header() {
                 
                 
             </header>
-            <div class="socialMediaButtons">
+            <div className="socialMediaButtons">
                 <a href="https://github.com/spencerpauly/" rel="noopener noreferrer" target="_blank">
                     <span className="fa-layers fa-fw iconWrapper">
                         <FontAwesomeIcon icon={faCircle} color="#212121" />
