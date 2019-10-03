@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
 import "./Project.css"
+import {Image} from 'cloudinary-react';
 
 export class Project extends Component {
-    
+
     projectButton = () => {
         return (this.props.project.project !== "") ?
             <Button href={this.props.project.project} target="_blank" variant="project" className="projectButton">View Project</Button> : <span></span>
@@ -27,7 +28,7 @@ export class Project extends Component {
     frameworkBadges = (badges) => {
         if (badges) {
             return badges.map((badge) => (
-                <Badge variant="primaryItem" className="projectBadge">{badge}</Badge>
+                <Badge key={badge} variant="primaryItem" className="projectBadge">{badge}</Badge>
             ))    
         }
     }
@@ -35,15 +36,28 @@ export class Project extends Component {
     programmingLanguageBadges = (badges) => {
         if (badges) {
             return badges.map((badge) => (
-                <Badge variant="secondaryItem" className="projectBadge">{badge}</Badge>
+                <Badge key={badge} variant="secondaryItem" className="projectBadge">{badge}</Badge>
             ))    
         }
     }
 
     featuredProjectItem = () => {
+        var image = function() {
+            this.state.projectImages.forEach((projectImage) => {
+                if (projectImage.id === this.props.project.id) {
+                    return projectImage;
+                }
+            });
+        };
+        console.log(image);
+        // {
+        //     if(jsonObj[i].name == "KC Content Kind ID")
+        //         return jsobObj[i].id;
+        // }
+
         return (
             <div className="featuredProject">
-                <img src={this.props.project.image} alt="featured" />
+                <Image className="projectImage" cloudName="spencerpauly" publicId={this.props.project.image} width="400" crop="scale"/>
                 <div className="featuredProjectDescription">
                     <h3>{this.props.project.title}</h3>
                     <p>{this.props.project.desc}</p>

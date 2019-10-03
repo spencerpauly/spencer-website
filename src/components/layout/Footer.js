@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Image from "react-bootstrap/Image";
+import {Image} from "cloudinary-react";
 import "./Footer.css"
 
 class Footer extends Component {
@@ -9,9 +9,9 @@ class Footer extends Component {
                 <div className="footerCopyright">
                     <span className="sketchyhardcoding">This is an easter egg, yay!</span>
                 </div>
-                <div class="footerImg">
+                <div className="footerImg">
                     <a href="#header">
-                        <Image class="footerImgImg" src="./images/logo-secondary.png" fluid />
+                        <Image className="footerImgImg" cloudName="spencerpauly" publicId="projects/logo-secondary_mbjinr.png" width="70" crop="scale"/>
                     </a>
                 </div>
                 <div className="footerCopyright">

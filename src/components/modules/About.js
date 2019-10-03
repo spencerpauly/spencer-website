@@ -85,7 +85,7 @@ export class About extends Component {
 
     drawAllBadgesSimple = (skillsObject) => {
         return skillsObject.map((skillObject) => (
-            <Badge variant={skillObject.type} className="skillBadge">{skillObject.name}</Badge>
+            <Badge key={skillObject.name} variant={skillObject.type} className="skillBadge">{skillObject.name}</Badge>
         ))
 
     }
@@ -98,9 +98,7 @@ export class About extends Component {
             //         {this.blueBadges(this.props.skills.languages)}
             //         {this.greenBadges(this.props.skills.development)}
             //         {this.otherBadges(this.props.skills.interpersonal)} */}
-
             //         {this.drawAllBadges(this.props.skills)}
-
             //     </h5>
             // </div>
 
@@ -108,14 +106,14 @@ export class About extends Component {
                 <h2>About Me</h2>
                 <div className="aboutSectionFlexbox">
                     <div className="quickInfo">
-                        <p>
+                        <div>
                             <span className="fa-layers fa-fw iconWrapper">
                                 <FontAwesomeIcon icon={faCircle} color="#0984e3" />
                                 <FontAwesomeIcon icon={faGraduationCap} inverse transform="shrink-8"/>
                             </span> 
                             <span className="iconText"><b>University of Minnesota Duluth</b></span>                        
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <span className="fa-layers fa-fw iconWrapper">
                                 <FontAwesomeIcon icon={faCircle} color="#0984e3" />
                                 <FontAwesomeIcon icon={faBook} inverse transform="shrink-8"/>
@@ -125,15 +123,15 @@ export class About extends Component {
                                 <li>Marketing Minor</li>
                             </ul>
                             </span>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <span className="fa-layers fa-fw iconWrapper">
                                 <FontAwesomeIcon icon={faCircle} color="#0984e3" />
                                 <FontAwesomeIcon icon={faCalendarWeek} inverse transform="shrink-8"/>
                             </span> 
                             <span className="iconText"><b>Graduation Year 2021</b></span>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <span className="fa-layers fa-fw iconWrapper">
                                 <FontAwesomeIcon icon={faCircle} color="#0984e3" />
                                 <FontAwesomeIcon icon={faBookReader} inverse transform="shrink-8"/>
@@ -152,35 +150,35 @@ export class About extends Component {
                                 <li>Public Speaking</li>
                             </ul>
                             </span>                        
-                        </p>
+                        </div>
                     </div>
                     <div className="bio">
-                        <p>
+                        <div>
                             <h3>Objective</h3> 
                             <p className="aboutMeText">
                                 As a self-motivated, goal-oriented undergraduate student in computer science, I'm currently seeking an internship position for the summer of 2020 that will allow me to build products on a commercial scale. I have completed numerous personal projects, advanced courses, and previous internships that I believe would make me the perfect candidate for a software engineering internship.
                             </p>
-                        </p>
+                        </div>
                         <br />
-                        <p>
+                        <div>
                             <h3>Skills</h3> 
                             <p className="aboutMeText">
                                 I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in.
                             </p>
-                        </p>
-                        <div class="skillsBadgeContainer">
+                        </div>
+                        <div className="skillsBadgeContainer">
                             {this.drawAllBadgesSimple(this.props.skills)}
                         </div>
-                        <div class="skillsLegend">
+                        <div className="skillsLegend">
                             <ul>
-                                <li class="developmentColor"><FontAwesomeIcon icon={faCircle}/> <span>Software Development Strategies</span></li>
-                                <li class="languageColor"><FontAwesomeIcon icon={faCircle}/> <span>Programming Languages</span></li>
-                                <li class="interpersonalColor"><FontAwesomeIcon icon={faCircle}/> <span>Soft Skills</span></li>
-                                <li class="frameworkColor"><FontAwesomeIcon icon={faCircle}/> <span>Technologies and Frameworks</span></li>
+                                <li className="developmentColor"><FontAwesomeIcon icon={faCircle}/> <span>Software Development Strategies</span></li>
+                                <li className="languageColor"><FontAwesomeIcon icon={faCircle}/> <span>Programming Languages</span></li>
+                                <li className="interpersonalColor"><FontAwesomeIcon icon={faCircle}/> <span>Soft Skills</span></li>
+                                <li className="frameworkColor"><FontAwesomeIcon icon={faCircle}/> <span>Technologies and Frameworks</span></li>
 
                             </ul>
                         </div>
-                        {/* <p class="workExperience">
+                        {/* <p className="workExperience">
                             <b>Work Experience</b>
                             <p>
                                
@@ -194,7 +192,7 @@ export class About extends Component {
                                </ul>
                             </p>
                         </p> */}
-                        <p>
+                        <div>
                             <p className="aboutMeText">
                                 If you want to learn more feel free to click one of the links below. I will respond to communications usually within
                                 48 hours so feel free to contact me. Thanks!
@@ -204,11 +202,9 @@ export class About extends Component {
                                 <Button href="https://drive.google.com/file/d/1QD_nj1-3Aq9fnJDxcjPZWCPZfUn15Byd/view?usp=sharing/" target="_blank" variant="github" className="moreInfoButton">View Resume (.pdf)</Button>
 
                             </p>
-                        </p>
-
+                        </div>
                     </div>
                 </div>
-                
             </div>
         )
     }

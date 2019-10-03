@@ -9,14 +9,14 @@ export class ContactMe extends Component {
         return (
             <div id="contact" className="contactMeSection">
                 <h2 >Contact Me</h2>
-                <div class="contactFormWrapper">
-                    <div class="contactForm">
+                <div className="contactFormWrapper">
+                    <div className="contactForm">
                         <p>
                             This form can be used to contact me via email. 
                             If you prefer you can instead directly email me at spencerpauly@gmail.com. 
                             I will usually respond to any contact within 48 hours, so feel free to reach out. Thanks!
                         </p>
-                        <div class="contactFormForm">
+                        <div className="contactFormForm">
                             <Form method="POST" action="https://formspree.io/spencerpauly@gmail.com">
                                 <Form.Group controlId="formBasicName">
                                     <Form.Label className="formLabel">Your Name</Form.Label>
