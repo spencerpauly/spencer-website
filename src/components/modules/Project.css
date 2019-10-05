@@ -123,3 +123,9 @@
         margin-top: .5em;
     }
 }
+
+.liveIcon {
+    font-size: .9em;
+    padding-left: .4em;
+    vertical-align: top;
+}

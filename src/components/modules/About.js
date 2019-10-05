@@ -154,7 +154,7 @@ export class About extends Component {
                     </div>
                     <div className="bio">
                         <div>
-                            <h3>Objective</h3> 
+                            <h3>My Goals</h3> 
                             <p className="aboutMeText">
                                 As a self-motivated, goal-oriented undergraduate student in computer science, I'm currently seeking an internship position for the summer of 2020 that will allow me to build products on a commercial scale. I have completed numerous personal projects, advanced courses, and previous internships that I believe would make me the perfect candidate for a software engineering internship.
                             </p>
@@ -199,8 +199,7 @@ export class About extends Component {
 
                             </p>
                             <p>
-                                <Button href="https://drive.google.com/file/d/1QD_nj1-3Aq9fnJDxcjPZWCPZfUn15Byd/view?usp=sharing/" target="_blank" variant="github" className="moreInfoButton">View Resume (.pdf)</Button>
-
+                                <Button href="https://drive.google.com/file/d/1QD_nj1-3Aq9fnJDxcjPZWCPZfUn15Byd/view?usp=sharing/" target="_blank" variant="github" className="moreInfoButton">View Resume Online (.pdf)</Button>
                             </p>
                         </div>
                     </div>

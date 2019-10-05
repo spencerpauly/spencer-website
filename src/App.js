@@ -19,7 +19,7 @@ class App extends Component {
                 desc: "This website is my online portfolio programmed using web technologies and the React framework. It features a fully responsive front-end built for any screen size, and numerous backend features to make website management easier.",
                 image: "projects/spencerpauly-1_gtrvdg.png",
                 github: "https://github.com/spencerpauly/spencerpauly.com-main-website",
-                project: "http://spencerpauly.com",
+                project: "",
                 status: "Work In Progress",
                 frameworks: [
                     "React",
@@ -43,7 +43,7 @@ class App extends Component {
                 desc: "This is an online tool that utilizes the Spotify Web API to gather personalized data about your music listening trends. My app uses this data to allow you to see your favorite tracks and artists, then download these tracks into a personalized spotify playlist and does this all through a secure backend connection to Spotify's Web API with NodeJS.",
                 image: "projects/spotify-7_phsova.png",
                 github: "https://github.com/spencerpauly/Spotify-Statistics-Web-App",
-                project: "http://spencerpauly.com",
+                project: "https://spotify.spencerpauly.com",
                 status: "Completed 12/20/2018",
                 frameworks: [
                     "JQuery",
@@ -280,6 +280,10 @@ class App extends Component {
             },
             {
                 name: "JSON",
+                type: "framework",
+            },
+            {
+                name: "Nginx",
                 type: "framework",
             },
             

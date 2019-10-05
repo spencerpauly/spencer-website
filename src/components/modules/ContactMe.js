@@ -20,16 +20,21 @@ export class ContactMe extends Component {
                             <Form method="POST" action="https://formspree.io/spencerpauly@gmail.com">
                                 <Form.Group controlId="formBasicName">
                                     <Form.Label className="formLabel">Your Name</Form.Label>
-                                    <Form.Control type="text" name="name" placeholder="John Doe" />
+                                    <Form.Control type="text" name="name" placeholder="John Doe" required />
                                 </Form.Group>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label className="formLabel">Email address</Form.Label>
-                                    <Form.Control type="email" name="_replyto" placeholder="Enter email here" />
+                                    <Form.Control type="email" name="_replyto" placeholder="Enter email here" required />
                                 </Form.Group>
                                 <Form.Group controlId="exampleForm.ControlTextarea1">
                                     <Form.Label className="formLabel">Message</Form.Label>
-                                    <Form.Control type="text" name="message" as="textarea" rows="3" />
+                                    <Form.Control type="text" name="message" placeholder="Your message..." as="textarea" rows="3" />
                                 </Form.Group>
+                                <Form.Group controlId="formHiddenStuff">
+                                    <Form.Control type="hidden" name="_subject" value="SpencerPauly.com - New inquiry from visitor!" />
+                                    <Form.Control type="hidden" name="_next" value="https://spencerpauly.com/" />
+                                </Form.Group>
+                                
                                 <Button variant="formSubmit" type="submit" value="send">
                                     Submit
                                 </Button>
