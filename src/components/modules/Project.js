@@ -5,11 +5,18 @@ import Badge from 'react-bootstrap/Badge';
 import "./Project.css"
 import {Image} from 'cloudinary-react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
+
+
 export class Project extends Component {
 
     projectButton = () => {
         return (this.props.project.project !== "") ?
-            <Button href={this.props.project.project} target="_blank" variant="project" className="projectButton">View Project</Button> : <span></span>
+            <Button href={this.props.project.project} target="_blank" variant="project" className="projectButton">
+                View Project Live
+                <FontAwesomeIcon className="liveIcon" icon={faCircle} color="red" />
+            </Button> : <span></span>
     }
 
     githubButton = () => {
