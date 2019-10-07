@@ -10,6 +10,8 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons'
 import { faBookReader } from '@fortawesome/free-solid-svg-icons'
+import { faMapPin } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -151,33 +153,64 @@ export class About extends Component {
                             </ul>
                             </span>                        
                         </div>
+                        <div>
+                            <span className="fa-layers fa-fw iconWrapper">
+                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faMapPin} inverse transform="shrink-8"/>
+                            </span> 
+                            <span className="iconText"><b>Minneapolis, MN</b></span>
+                        </div>
                     </div>
                     <div className="bio">
-                        <div>
-                            <h3>My Goals</h3> 
+                    <div className="aboutMeParagraph">
+                            <h3>Summary</h3> 
                             <p className="aboutMeText">
-                                As a self-motivated, goal-oriented undergraduate student in computer science, I'm currently seeking an internship position for the summer of 2020 that will allow me to build products on a commercial scale. I have completed numerous personal projects, advanced courses, and previous internships that I believe would make me the perfect candidate for a software engineering internship.
+                                I'm a <i>third year undergraduate student</i> studying Computer Science at the University of Minnesota Duluth. I'm located out of Minneapolis, MN and I have over 4 years of experience with software development. I enjoy working with the newest technologies and focusing on architecture when I build my projects. I have software development internship experience in the past and am hoping to get learn more as I move forward in my career!
                             </p>
                         </div>
-                        <br />
-                        <div>
-                            <h3>Skills</h3> 
+                        <div className="aboutMeParagraph">
+                            <h3>Work Experience</h3> 
                             <p className="aboutMeText">
-                                I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in.
-                            </p>
-                        </div>
-                        <div className="skillsBadgeContainer">
-                            {this.drawAllBadgesSimple(this.props.skills)}
-                        </div>
-                        <div className="skillsLegend">
-                            <ul>
-                                <li className="developmentColor"><FontAwesomeIcon icon={faCircle}/> <span>Software Development Strategies</span></li>
-                                <li className="languageColor"><FontAwesomeIcon icon={faCircle}/> <span>Programming Languages</span></li>
-                                <li className="interpersonalColor"><FontAwesomeIcon icon={faCircle}/> <span>Soft Skills</span></li>
-                                <li className="frameworkColor"><FontAwesomeIcon icon={faCircle}/> <span>Technologies and Frameworks</span></li>
+                                <div className="jobHistoryFlexbox">
+                                    <div className="jobHistoryFlexItem">Software Engineer Intern | Trane</div>
+                                    <div className="jobHistoryFlexItem">May 2019 - August 2019</div>
+                                </div>
+                                Developed a reverse proxy server using C#, .NET framework and JavaScript to host their suite of web tools directly within one of their current desktop applications.
 
-                            </ul>
+                                {/* <ul className="jobTalkingPoints">
+                                    <li>Developed a reverse proxy server using C#, .NET framework and JavaScript to host their suite of web tools directly within one of their current desktop applications</li> 
+                                    <li>Delivered project ahead of schedule and was able to get scope expanded and eventually implemented into production environment</li>                              
+                                    <li>Collaborated with senior software engineers and management to make engineering decisions related to product and participate in group code and design reviews</li>
+                                    <li>Fixed three software defects in their production tools</li>
+                                </ul> */}
+                            </p>
+                            <p className="aboutMeText">
+                                <div className="jobHistoryFlexbox">
+                                    <div className="jobHistoryFlexItem">IT Intern | Trex Commercial Products</div>
+                                    <div className="jobHistoryFlexItem">June 2018 - August 2018</div>
+                                </div>
+                                Deployed over 25 computers to employees while optimizing the deployment process for future deployments. Used tools in the windows configuration suite to assist in managing employee workstations.
+                            </p>
                         </div>
+                        <div className="aboutMeParagraph">
+                            <h3>My Skills</h3> 
+                            <p className="aboutMeText">
+                                {/* I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in. */}
+                            </p>
+                            <div className="skillsBadgeContainer">
+                                {this.drawAllBadgesSimple(this.props.skills)}
+                            </div>
+                            <div className="skillsLegend">
+                                <ul>
+                                    <li className="developmentColor"><FontAwesomeIcon icon={faCircle}/> <span>Software Development Strategies</span></li>
+                                    <li className="languageColor"><FontAwesomeIcon icon={faCircle}/> <span>Programming Languages</span></li>
+                                    <li className="interpersonalColor"><FontAwesomeIcon icon={faCircle}/> <span>Soft Skills</span></li>
+                                    <li className="frameworkColor"><FontAwesomeIcon icon={faCircle}/> <span>Technologies and Frameworks</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
                         {/* <p className="workExperience">
                             <b>Work Experience</b>
                             <p>
@@ -192,14 +225,22 @@ export class About extends Component {
                                </ul>
                             </p>
                         </p> */}
-                        <div>
+                        <div className="aboutMeParagraph">
+                            <h3>Interested? Hire Me!</h3> 
+                            <p className="aboutMeText">
+                                I'm currently seeking a <i>Software Engineering Internship position for the summer of 2020</i>. I would like the opportunity to work with modern technologies and an environment that allows me to learn and grow my portfolio of technical skills. I'm based out of the Minneapolis area but am willing and eager to relocate if necessary. If my website and resume interest you, please feel free to contact me and I will get back to you ASAP.
+                            </p>
+                        {/* </div>
+                        <div className="aboutMeParagraph">
                             <p className="aboutMeText">
                                 If you want to learn more feel free to click one of the links below. I will respond to communications usually within
                                 48 hours so feel free to contact me. Thanks!
 
-                            </p>
+                            </p> */}
                             <p>
-                                <Button href="https://drive.google.com/file/d/1QD_nj1-3Aq9fnJDxcjPZWCPZfUn15Byd/view?usp=sharing/" target="_blank" variant="github" className="moreInfoButton">View Resume Online (.pdf)</Button>
+                                <Button href="https://drive.google.com/file/d/1QD_nj1-3Aq9fnJDxcjPZWCPZfUn15Byd/view?usp=sharing/" target="_blank" variant="project" className="moreInfoButton">View Resume Online (.pdf)</Button>
+                                {/* <Button href="#contact" variant="github" className="moreInfoButton contactMeBtnInAboutMe">Contact Me</Button> */}
+
                             </p>
                         </div>
                     </div>

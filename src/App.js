@@ -15,8 +15,8 @@ class App extends Component {
         projects: [
             {
                 id: 0,
-                title: "SpencerPauly.com Website in React",
-                desc: "This website is my online portfolio programmed using web technologies and the React framework. It features a fully responsive front-end built for any screen size, and numerous backend features to make website management easier.",
+                title: "SpencerPauly.com Portfolio Website in React",
+                desc: "This website is my online portfolio built using the React framework. The initial prototype for the site was built in 24 hours with no prior experience with React at all. From that point on I've been adding features and keeping continous progress updates through git. This project uses Nginx as a backend reverse proxy, MongoDB as a dynamic database for project data, and Flexbox web design to provide a beautiful responsive front-end interface. Future plans include a refactoring, as-well as a UI/UX overhaul and cleaner backend design with Docker containers.",
                 image: "projects/spencerpauly-1_gtrvdg.png",
                 github: "https://github.com/spencerpauly/spencerpauly.com-main-website",
                 project: "",
@@ -25,8 +25,11 @@ class App extends Component {
                     "React",
                     "React-Bootstrap",
                     "NodeJS",
+                    "Nginx",
+                    "MongoDB",
                     "Git",
-                    "FontAwesome",
+                    "React-Bootstrap",
+                    "Cloudinary CDN",
                     
                 ],
                 programmingLanguages: [
@@ -40,7 +43,7 @@ class App extends Component {
             {
                 id: 1,
                 title: "Spotify Statistics Webpage",
-                desc: "This is an online tool that utilizes the Spotify Web API to gather personalized data about your music listening trends. My app uses this data to allow you to see your favorite tracks and artists, then download these tracks into a personalized spotify playlist and does this all through a secure backend connection to Spotify's Web API with NodeJS.",
+                desc: "This is an online tool that utilizes the Spotify Web API to gather personalized data about your music listening trends. My app uses this data to allow you to view your favorite tracks and artists in an online web app. It also compiles you  personalized spotify playlist of your favorite tracks. This is all done securily using NodeJS as a secure backend to handle the connection between Spotify's Web API and the end user.",
                 image: "projects/spotify-7_phsova.png",
                 github: "https://github.com/spencerpauly/Spotify-Statistics-Web-App",
                 project: "https://spotify.spencerpauly.com",
@@ -49,6 +52,7 @@ class App extends Component {
                     "JQuery",
                     "Bootstrap",
                     "NodeJS",
+                    "Web API",
                     "Git",
                 ],
                 programmingLanguages: [
@@ -62,15 +66,16 @@ class App extends Component {
             {
                 id: 2,
                 title: "Start Of The World Mobile Game",
-                desc: "Start of The World is as an open-world 2D land-claiming game that overlays over the real-world map. It uses the phone's GPS to position a user properly in game world and is designed to work on both IOS and Android.",
+                desc: "Start of The World is as an open-world land-claiming game that overlays over the real-world map. It uses the phone's GPS to position a user properly in game world and is designed to work on both IOS and Android. In the game you manage a cohort of soldiers as you move as a pack to conquest the next city. This project has taught me a LOT about architecture and is one of my first larger-sized projects.",
                 image: "projects/sotw-1_hvayqo.png",
                 github: "https://github.com/spencerpauly/Start-Of-The-World",
                 project: "",
                 status: "Paused",
                 frameworks: [
-                    "Unity3D",
+                    "Unity",
                     "Design Patterns",
                     "Component-Based Architecture",
+                    "Level Design",
                 ],
                 programmingLanguages: [
                     "C#",
@@ -80,8 +85,8 @@ class App extends Component {
             },
             {
                 id: 3,
-                title: "POC Neural Network for String Encryption",
-                desc: "A C++ Neural Network made from scratch to encrypt and decrypt strings. This project features a custom-made matrix multiplication library and a custom .TSV file reader to automatically pass data as inputs to the neural network.",
+                title: "Proof-Of-Concept Neural Network for String Encryption",
+                desc: "A C++ Neural Network made from scratch to encrypt and decrypt strings. This project features a custom-made matrix multiplication library and a custom .TSV file reader to automatically pass data as inputs to the neural network. This is an old project from freshman year of college, so I decided to build all the components of it myself instead of using frameworks and libraries.",
                 image: "projects/nn-1_ok9o0j.png",
                 github: "https://github.com/spencerpauly/Neural-Network-for-String-Encryption-and-Decryption",
                 project: "",
@@ -109,6 +114,7 @@ class App extends Component {
                     "NodeJS",
                     "MongoDB",
                     "JSON",
+                    "Team Organization & Management"
                 ],
                 programmingLanguages: [
                     "Java",

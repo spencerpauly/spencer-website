@@ -21,7 +21,6 @@ export class NavigationBar extends Component {
                         <Nav.Link href="#about"><span>About Me</span></Nav.Link>
                         <Nav.Link href="#projects"><span>My Projects</span></Nav.Link>
                         <Nav.Link href="#contact"><span>Contact Me</span></Nav.Link>
-
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

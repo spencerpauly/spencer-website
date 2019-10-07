@@ -89,7 +89,7 @@
     text-align: left;
     line-height: 1.3em;
     margin-left: 0em;
-    padding-bottom: 5.3em;
+    padding-bottom: 4em;
 }
 
 .skillsLegend ul {
@@ -169,6 +169,11 @@
 
 .aboutMeText {
     font-size: .9em;
+    text-align: left;
+}
+
+.contactMeBtnInAboutMe {
+    margin-left: .5em;
 }
 
 .bio h3 {
@@ -177,4 +182,23 @@
     margin-bottom: .2em;
     font-weight: bold;
     text-align: left;
+}
+
+.jobHistoryFlexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobHistoryFlexItem {
+    flex-basis: .5;
+    font-weight: bold;
+}
+
+.jobTalkingPoints {
+    padding-left: 1em;
+    font-size: .9em;
+}
+
+.aboutMeParagraph {
+    padding-bottom: 1em;
 }

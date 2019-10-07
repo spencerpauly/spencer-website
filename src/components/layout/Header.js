@@ -21,11 +21,15 @@ function Header() {
                 <div>
                     <h1>Spencer Pauly</h1>
                     <p>Hello there!</p>
+                    {/* <p>
+                        I'm a Computer Science Undergraduate Student at University of Minnesota Duluth. 
+                        As someone who loves working on personal programming projects, I found the need to have a central repository to host all my projects.
+                        This website is the solution. If you like what you see or have any questions, feel free to contact me. Thank you! 
+                    </p> */}
                     <p>
-                        I'm a Computer Science B.S. Student at University of Minnesota Duluth. 
-                        As a student who loves working on personal programming projects I found the need to have a central repository to host all my projects.
-                        This website is the solution. It's built using the React framework on the front end and NodeJS, Nginx, and MongoDB for the backend. Enjoy!
-                        
+                        I'm a Computer Science Undergraduate Student at University of Minnesota Duluth. 
+                        I have experience building many small and medium-scale applications both by myself and as a part of a development team.
+                        This website is a showcase of my most recent work and provides some background on me as-well. Enjoy!
                     </p>
                     <Button href="#contact" variant="main">Contact Me</Button>
                 </div>

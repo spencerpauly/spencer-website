@@ -43,3 +43,9 @@
   max-width: 70em;
   margin: 0 auto;
 }
+
+i {
+  color: #0984e3;
+  font-style: normal;
+  font-weight: bold;
+}
