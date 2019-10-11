@@ -1,5 +1,9 @@
 .header {
     background: #0984e3;
+    padding: 0;
+}
+
+.headerMainSection {
     min-height: 20em;
     padding-top: 3em;
     width: 100%;
@@ -8,7 +12,7 @@
     justify-content: center;
 }
 
-.header div {
+.headerMainSection div {
     text-align: left;
     align-self: center;
 }
@@ -21,11 +25,11 @@
     margin-right: 2em;
 }
 
-.header h1 {
+.headerMainSection h1 {
     font-size: 2.1em;
 }
 
-.header p {
+.headerMainSection p {
     font-size: .9em;
     max-width: 55em;
     margin-right: 2em;
@@ -38,54 +42,13 @@
     padding-right: 5.5em !important;
 }
 
-@media only screen and (max-width: 600px) {
-    .header div {
-        text-align: center !important;
-        margin-left: 3em;
-        margin-right: .4em;
-        
-    }
-
-    .headerImg {
-        width: 10em;
-    }
-
-}
-
 .socialMediaButtons {
     min-width: 20em;
     width: 100%;
-    background: #0984e3;
     text-align: right;
     padding-right: .8em;
-    padding-bottom: .3em;
+    padding-bottom: .5em;
     font-size: 1.2em;
-}
-
-@media only screen and (max-width: 900px) {
-    .socialMediaButtons {
-        text-align: center;
-        padding-right: 0em;
-        margin-left: 0em;
-        min-width: 10em;
-
-    }
-
-    .header {
-        min-height: 24em;
-        padding-bottom: 1em;
-    }
-
-    .headerImg {
-        display: none;
-    }
-
-    .header div {
-        text-align: center !important;
-        margin-left: .4em;
-        margin-right: .4em;
-        
-    }
 }
 
 .githubIcon:hover {
@@ -103,3 +66,40 @@
 .spotifyIcon:hover {
     color: #1DB954;
 }
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    .header div {
+        text-align: center !important;
+        margin-left: 3em;
+        margin-right: .4em;
+        
+    }
+    .headerImg {
+        width: 10em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .socialMediaButtons {
+        text-align: center;
+        padding-right: 0em;
+        margin-left: 0em;
+        min-width: 10em;
+
+    }
+    .headerMainSection {
+        min-height: 24em;
+        padding-bottom: 1em;
+    }
+    .headerImg {
+        display: none;
+    }
+    .headerMainSection div {
+        text-align: center !important;
+        margin-left: .4em;
+        margin-right: .4em;
+    }
+}
+

@@ -12,12 +12,11 @@ import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 
 function Header() {
     return (
-        <>
-            <header id="header" className='header'>
+        <section id="header" className="header">
+            <div className="headerMainSection">
                 <div>
                     <Image className="headerImg" cloudName="spencerpauly" publicId="assets/avatar-1_lwtpeq.jpg" width="500" crop="scale"/>
                 </div>
-
                 <div>
                     <h1>Spencer Pauly</h1>
                     <p>Hello there!</p>
@@ -33,10 +32,7 @@ function Header() {
                     </p>
                     <Button href="#contact" variant="main">Contact Me</Button>
                 </div>
-               
-                
-                
-            </header>
+            </div>
             <div className="socialMediaButtons">
                 <a href="https://github.com/spencerpauly/" rel="noopener noreferrer" target="_blank">
                     <span className="fa-layers fa-fw iconWrapper">
@@ -62,9 +58,8 @@ function Header() {
                         <FontAwesomeIcon icon={faSpotify} className="spotifyIcon" inverse transform="shrink-8"/>
                     </span> 
                 </a>
-            
             </div>
-        </>
+        </section>
     )
 }
 

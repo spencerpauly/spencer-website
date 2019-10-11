@@ -5,19 +5,19 @@ import "./Footer.css"
 class Footer extends Component {
     render() {
         return (
-            <div className="footer">
-                <div className="footerCopyright">
-                    <span className="sketchyhardcoding">This is an easter egg, yay!</span>
+            <section id="footer" className="footer">
+                <div className="footerSubsection">
+                    <span className="easteregg">This is an easter egg, yay!</span>
                 </div>
-                <div className="footerImg">
+                <div className="footerImgSection">
                     <a href="#header">
-                        <Image className="footerImgImg" cloudName="spencerpauly" publicId="projects/logo-secondary_mbjinr.png" width="70" crop="scale"/>
+                        <Image className="footerImg" cloudName="spencerpauly" publicId="projects/logo-secondary_mbjinr.png" width="70" crop="scale"/>
                     </a>
                 </div>
-                <div className="footerCopyright">
+                <div className="footerSubsection">
                     <span>Copyright Spencer Pauly 2019</span>
                 </div>
-            </div>
+            </section>
         );
     }
 }
