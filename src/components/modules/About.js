@@ -238,7 +238,7 @@ export class About extends Component {
 
                             </p> */}
                             <p>
-                                <Button href="https://drive.google.com/file/d/1QD_nj1-3Aq9fnJDxcjPZWCPZfUn15Byd/view?usp=sharing/" target="_blank" variant="project" className="moreInfoButton">View Resume Online (.pdf)</Button>
+                                <Button href="https://drive.google.com/file/d/1YtCXo3WgO_jQNRaIiR7AQzqbwobIpvpD/view?usp=sharing/" target="_blank" variant="project" className="moreInfoButton">View Resume Online (.pdf)</Button>
                                 {/* <Button href="#contact" variant="github" className="moreInfoButton contactMeBtnInAboutMe">Contact Me</Button> */}
 
                             </p>
