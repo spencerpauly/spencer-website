@@ -1,19 +1,4 @@
-.skillsList {
-    display: flex;
-    justify-content: center;
-    padding-top: 2em;
-}
-
-.skillsList h5 {
-    max-width: 30em;
-}
-
-.skillBadge {
-    margin-left: .1em;
-    margin-right: .1em;
-    margin: .2em;
-    float: left;
-}
+/* General About Section */
 
 .aboutSection {
     text-align: center;
@@ -32,9 +17,9 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-
-
 }
+
+/* QuickInfo Aside Section */
 
 .quickInfo {
     flex-grow: 1;
@@ -47,6 +32,28 @@
     margin-right: 4em;
 }
 
+.quickInfo div span {
+    vertical-align: middle;   
+}
+
+.iconWrapper {
+    font-size: 2em;
+    margin-right: .2em;
+}
+
+.iconText {
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.relevantCourses {
+    list-style: none;
+    margin-left: 4.3em;
+    font-size: .9em;
+}
+
+/* Bio Section */
+
 .bio {
     width: 100%;
     flex-grow: 1;
@@ -56,24 +63,57 @@
     text-align: left;
 }
 
-.badge-framework {
-    background-color: #1abc9c !important;
-    color: white !important;
+.bio h3 {
+    font-size: 1.1em;
+    padding-bottom: 0;
+    margin-bottom: .2em;
+    font-weight: bold;
+    text-align: left;
 }
 
-.badge-language {
-    background-color: #f39c12 !important;
-    color: white !important;
+.aboutMeText {
+    font-size: .9em;
+    text-align: left;
 }
 
-.badge-development {
-    background-color: #9b59b6 !important;
-    color: white !important;
+.aboutMeParagraph {
+    padding-bottom: 1em;
 }
 
-.badge-interpersonal {
-    background-color: #3498db !important;
-    color: white !important;
+/* Job History Section */
+
+.jobHistoryFlexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobHistoryFlexItem {
+    flex-basis: .5;
+    font-weight: bold;
+}
+
+.jobTalkingPoints {
+    padding-left: 1em;
+    font-size: .9em;
+}
+
+/* Skills Section */
+
+.skillsList {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.skillsList h5 {
+    max-width: 30em;
+}
+
+.skillBadge {
+    margin-left: .1em;
+    margin-right: .1em;
+    margin: .2em;
+    float: left;
 }
 
 .skillsBadgeContainer {
@@ -101,19 +141,24 @@
     font-weight: 400;
 }
 
-@media only screen and (max-width: 1000px) {
-    .skillsBadgeContainer {
-        display: none;
-    }
-    .skillsLegend {
-        display: none;
-    }
+.badge-framework {
+    background-color: #1abc9c !important;
+    color: white !important;
 }
 
-@media only screen and (max-width: 900px) {
-    .quickInfo {
-        display: none;
-    }
+.badge-language {
+    background-color: #f39c12 !important;
+    color: white !important;
+}
+
+.badge-development {
+    background-color: #9b59b6 !important;
+    color: white !important;
+}
+
+.badge-interpersonal {
+    background-color: #3498db !important;
+    color: white !important;
 }
 
 .frameworkColor {
@@ -122,83 +167,37 @@
 
 .languageColor {
     color: #f39c12 !important;
-
 }
 
 .developmentColor {
     color: #9b59b6 !important;
-
 }
 
 .interpersonalColor {
     color: #3498db !important;
-
 }
 
-.iconWrapper {
-    font-size: 2em;
-    margin-right: .2em;
-}
-
-.quickInfo div span {
-    vertical-align: middle;
-    
-}
-
-.iconText {
-    font-size: 1em;
-    vertical-align: middle;
-
-}
-
-.relevantCourses {
-    list-style: none;
-    margin-left: 4.3em;
-    font-size: .9em;
-}
-
-.workExperience ul {
-    margin-left: 2em;
-    max-width: 40em;
-}
+/* Call to Action */
 
 .moreInfoButton {
     padding-right: 3em !important;
     padding-left: 3em !important;
 }
 
-.aboutMeText {
-    font-size: .9em;
-    text-align: left;
-}
-
 .contactMeBtnInAboutMe {
     margin-left: .5em;
 }
 
-.bio h3 {
-    font-size: 1.1em;
-    padding-bottom: 0;
-    margin-bottom: .2em;
-    font-weight: bold;
-    text-align: left;
+/* Mobile */
+
+@media only screen and (max-width: 900px) {
+    .quickInfo {
+        display: none;
+    }
 }
 
-.jobHistoryFlexbox {
-    display: flex;
-    justify-content: space-between;
-}
-
-.jobHistoryFlexItem {
-    flex-basis: .5;
-    font-weight: bold;
-}
-
-.jobTalkingPoints {
-    padding-left: 1em;
-    font-size: .9em;
-}
-
-.aboutMeParagraph {
-    padding-bottom: 1em;
+@media only screen and (max-width: 700px) {
+    .mySkillsSection {
+        display: none;
+    }
 }

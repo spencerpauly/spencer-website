@@ -39,12 +39,12 @@
 /* Mobile */
 
 @media only screen and (max-width: 500px) {
-    .footerImg {
+    .footerImgSection {
         margin-top: 2em;
         margin-bottom: 2em;
     }
 
-    .footerCopyright {
+    .footerSubsection {
         display: none;
     }
 }

@@ -59,33 +59,6 @@ export class About extends Component {
     }
 
     drawAllBadges = (skillsObject) => {
-        var skills = [];
-        skillsObject.forEach(function(skill) {
-            skills.push(skill.items);
-        });
-        var newStack = [];
-
-        console.log("skills", skills);
-
-        while (!this.areChildrenEmpty(skills)) {
-            let toAdd = [];
-
-            skills.forEach(function(skill) {
-                if (skill.length > 0) {
-                    toAdd.push(skill.pop());
-                }
-            });
-
-
-            console.log("toadd", toAdd);
-
-            newStack.push(toAdd);
-        }
-        console.log("stack", newStack);
-
-    }
-
-    drawAllBadgesSimple = (skillsObject) => {
         return skillsObject.map((skillObject) => (
             <Badge key={skillObject.name} variant={skillObject.type} className="skillBadge">{skillObject.name}</Badge>
         ))
@@ -94,20 +67,10 @@ export class About extends Component {
 
     render() {
         return ( 
-            // <div className="skillsList">
-            //     <h5>
-            //         {/* {this.goldBadges(this.props.skills.frameworks)}
-            //         {this.blueBadges(this.props.skills.languages)}
-            //         {this.greenBadges(this.props.skills.development)}
-            //         {this.otherBadges(this.props.skills.interpersonal)} */}
-            //         {this.drawAllBadges(this.props.skills)}
-            //     </h5>
-            // </div>
-
-            <div id="about" className="aboutSection">
+            <section id="about" className="aboutSection">
                 <h2>About Me</h2>
                 <div className="aboutSectionFlexbox">
-                    <div className="quickInfo">
+                    <aside className="quickInfo">
                         <div>
                             <span className="fa-layers fa-fw iconWrapper">
                                 <FontAwesomeIcon icon={faCircle} color="#0984e3" />
@@ -160,9 +123,9 @@ export class About extends Component {
                             </span> 
                             <span className="iconText"><b>Minneapolis, MN</b></span>
                         </div>
-                    </div>
+                    </aside>
                     <div className="bio">
-                    <div className="aboutMeParagraph">
+                        <div className="aboutMeParagraph">
                             <h3>Summary</h3> 
                             <p className="aboutMeText">
                                 I'm a <i>third year undergraduate student</i> studying Computer Science at the University of Minnesota Duluth. I'm located out of Minneapolis, MN and I have over 4 years of experience with software development. I enjoy working with the newest technologies and focusing on architecture when I build my projects. I have software development internship experience in the past and am hoping to get learn more as I move forward in my career!
@@ -176,13 +139,6 @@ export class About extends Component {
                                     <div className="jobHistoryFlexItem">May 2019 - August 2019</div>
                                 </div>
                                 Developed a reverse proxy server using C#, .NET framework and JavaScript to host their suite of web tools directly within one of their current desktop applications.
-
-                                {/* <ul className="jobTalkingPoints">
-                                    <li>Developed a reverse proxy server using C#, .NET framework and JavaScript to host their suite of web tools directly within one of their current desktop applications</li> 
-                                    <li>Delivered project ahead of schedule and was able to get scope expanded and eventually implemented into production environment</li>                              
-                                    <li>Collaborated with senior software engineers and management to make engineering decisions related to product and participate in group code and design reviews</li>
-                                    <li>Fixed three software defects in their production tools</li>
-                                </ul> */}
                             </p>
                             <p className="aboutMeText">
                                 <div className="jobHistoryFlexbox">
@@ -192,13 +148,13 @@ export class About extends Component {
                                 Deployed over 25 computers to employees while optimizing the deployment process for future deployments. Used tools in the windows configuration suite to assist in managing employee workstations.
                             </p>
                         </div>
-                        <div className="aboutMeParagraph">
+                        <div className="aboutMeParagraph mySkillsSection">
                             <h3>My Skills</h3> 
                             <p className="aboutMeText">
                                 {/* I have numerous skills primarily in the areas of web development using modern technologies and software development in C# and Java. Below is a list of all the technologies I have experience in. */}
                             </p>
                             <div className="skillsBadgeContainer">
-                                {this.drawAllBadgesSimple(this.props.skills)}
+                                {this.drawAllBadges(this.props.skills)}
                             </div>
                             <div className="skillsLegend">
                                 <ul>
@@ -210,42 +166,19 @@ export class About extends Component {
                                 </ul>
                             </div>
                         </div>
-
-                        {/* <p className="workExperience">
-                            <b>Work Experience</b>
-                            <p>
-                               
-                               <ul>
-                                   <li>
-                                        2019 - Software Engineering Intern - Trane - White Bear Lake, MN
-                                   </li>
-                                   <li>
-                                       2019 - IT Intern - Trex Commercial Products
-                                   </li>
-                               </ul>
-                            </p>
-                        </p> */}
                         <div className="aboutMeParagraph">
                             <h3>Interested? Hire Me!</h3> 
                             <p className="aboutMeText">
                                 I'm currently seeking a <i>Software Engineering Internship position for the summer of 2020</i>. I would like the opportunity to work with modern technologies and an environment that allows me to learn and grow my portfolio of technical skills. I'm based out of the Minneapolis area but am willing and eager to relocate if necessary. If my website and resume interest you, please feel free to contact me and I will get back to you ASAP.
                             </p>
-                        {/* </div>
-                        <div className="aboutMeParagraph">
-                            <p className="aboutMeText">
-                                If you want to learn more feel free to click one of the links below. I will respond to communications usually within
-                                48 hours so feel free to contact me. Thanks!
-
-                            </p> */}
                             <p>
                                 <Button href="https://drive.google.com/file/d/1YtCXo3WgO_jQNRaIiR7AQzqbwobIpvpD/view?usp=sharing/" target="_blank" variant="project" className="moreInfoButton">View Resume Online (.pdf)</Button>
                                 {/* <Button href="#contact" variant="github" className="moreInfoButton contactMeBtnInAboutMe">Contact Me</Button> */}
-
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

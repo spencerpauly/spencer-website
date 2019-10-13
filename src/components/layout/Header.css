@@ -1,9 +1,7 @@
-.header {
+#header {
     background: #0984e3;
-    padding: 0;
 }
-
-.headerMainSection {
+.header {
     min-height: 20em;
     padding-top: 3em;
     width: 100%;
@@ -12,7 +10,7 @@
     justify-content: center;
 }
 
-.headerMainSection div {
+.header div {
     text-align: left;
     align-self: center;
 }
@@ -25,11 +23,11 @@
     margin-right: 2em;
 }
 
-.headerMainSection h1 {
+.header h1 {
     font-size: 2.1em;
 }
 
-.headerMainSection p {
+.header p {
     font-size: .9em;
     max-width: 55em;
     margin-right: 2em;
@@ -47,7 +45,7 @@
     width: 100%;
     text-align: right;
     padding-right: .8em;
-    padding-bottom: .5em;
+    padding-bottom: .3em;
     font-size: 1.2em;
 }
 
@@ -69,18 +67,6 @@
 
 /* Mobile */
 
-@media only screen and (max-width: 600px) {
-    .header div {
-        text-align: center !important;
-        margin-left: 3em;
-        margin-right: .4em;
-        
-    }
-    .headerImg {
-        width: 10em;
-    }
-}
-
 @media only screen and (max-width: 900px) {
     .socialMediaButtons {
         text-align: center;
@@ -89,17 +75,34 @@
         min-width: 10em;
 
     }
-    .headerMainSection {
+
+    .header {
         min-height: 24em;
         padding-bottom: 1em;
     }
+
     .headerImg {
         display: none;
     }
-    .headerMainSection div {
+
+    .header div {
         text-align: center !important;
         margin-left: .4em;
         margin-right: .4em;
+        
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .header div {
+        text-align: center !important;
+        margin-left: 3em;
+        margin-right: .4em;
+        
+    }
+
+    .headerImg {
+        width: 10em;
+    }
+
+}
