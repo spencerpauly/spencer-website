@@ -49,19 +49,6 @@ export class Project extends Component {
     }
 
     featuredProjectItem = () => {
-        var image = function() {
-            this.state.projectImages.forEach((projectImage) => {
-                if (projectImage.id === this.props.project.id) {
-                    return projectImage;
-                }
-            });
-        };
-        console.log(image);
-        // {
-        //     if(jsonObj[i].name == "KC Content Kind ID")
-        //         return jsobObj[i].id;
-        // }
-
         return (
             <div className="featuredProject">
                 <Image className="projectImage" cloudName="spencerpauly" publicId={this.props.project.image} width="400" crop="scale"/>

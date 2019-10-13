@@ -1,26 +1,4 @@
-.projectItem {
-    padding: 1em;
-    display: inline-flex;
-    text-align: left;
-    margin-top: 0em;
-    
-}
-
-.projectItem h3 {
-    font-size: 1.3em;
-}
-
-.projectItem p {
-    font-size: .9em;
-}
-
-.alignRight {
-    float: right;
-}
-
-.projectItem .projectBadge {
-    margin-right: .3em;
-}
+/* Featured Project */
 
 .featuredProject .projectBadge {
     float: left;
@@ -32,21 +10,6 @@
     padding-bottom: .4em;
 }
 
-.projectButtons {
-    margin: 0em;
-}
-
-.projectButton {
-    margin-right: .3em;
-}
-
-.interactionButtons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-  
 .featuredProject {
     flex-grow: 1;
     align-self: center;
@@ -77,6 +40,40 @@
     font-size: .9em;
 }
 
+/* Non-Featured Project */
+
+.projectItem {
+    padding: 1em;
+    display: inline-flex;
+    text-align: left;
+    margin-top: 0em;   
+}
+
+.projectItem h3 {
+    font-size: 1.3em;
+}
+
+.projectItem p {
+    font-size: .9em;
+}
+
+  
+/* Project Buttons */
+
+.interactionButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projectButtons {
+    margin: 0em;
+}
+
+.projectButton {
+    margin-right: .3em;
+}
+
 .btn-project {
     background-color: #0984e3 !important;
     color: white !important;
@@ -86,6 +83,18 @@
     background-color: #212121 !important;
     color: white !important;
     size: 20em;
+}
+
+.liveIcon {
+    font-size: .9em;
+    padding-left: .4em;
+    vertical-align: top;
+}
+
+/* Project Badges */
+
+.projectItem .projectBadge {
+    margin-right: .3em;
 }
 
 .badge-primaryItem {
@@ -98,6 +107,8 @@
     color: white !important;
 }
 
+/* Mobile */
+
 @media only screen and (max-width: 800px) {
     .featuredProject h3 {
         font-size: 1.3em;
@@ -105,13 +116,12 @@
     .featuredProject p {
         font-size: .8em;
     }
+    .featuredProject .projectBadges {
+        display: none;
+    }
     .projectImage {
         width: 10em;
         height: 10em;
-    }
-
-    .featuredProject .projectBadges {
-        display: none;
     }
 }
 
@@ -124,8 +134,3 @@
     }
 }
 
-.liveIcon {
-    font-size: .9em;
-    padding-left: .4em;
-    vertical-align: top;
-}

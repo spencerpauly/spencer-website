@@ -123,38 +123,7 @@ class App extends Component {
                 show: true,
             },
 
-        ],
-
-        // skills: [ 
-        //     {
-        //         framework: [
-        //             "coding",
-        //             "secondar",
-        //             "test",
-        //         ]
-        //     },
-        //     {
-        //         language: [
-        //             "coding",
-        //             "secondar",
-        //             "test",
-        //         ]
-        //     },
-        //     {
-        //         interpersonal: [
-        //             "coding",
-        //             "secondar",
-        //             "test",
-        //         ]
-        //     },
-        //     {
-        //         development: [
-        //             "coding",
-        //             "secondar",
-        //             "test",
-        //         ]
-        //     },
-        // ],
+        ], //Projects
 
         skills: [
             {
@@ -169,11 +138,6 @@ class App extends Component {
                 name: "Problem Analysis",
                 type: "interpersonal",
             },
-
-
-
-
-
             {
                 name: "Simple MVC Architecture",
                 type: "development",
@@ -190,15 +154,10 @@ class App extends Component {
                 name: "Teamwork",
                 type: "interpersonal",
             },
-
             {
                 name: "Design Patterns",
                 type: "development",
             },
-
-
-
-
             {
                 name: "Python",
                 type: "language",
@@ -231,7 +190,6 @@ class App extends Component {
                 name: "C#",
                 type: "language",
             },
-
             {
                 name: "Unity3D",
                 type: "framework",
@@ -240,18 +198,14 @@ class App extends Component {
                 name: "Android Development",
                 type: "framework",
             },
-            
-
             {
                 name: "Gradle",
                 type: "framework",
             },
-
             {
                 name: "JavaScript",
                 type: "language",
             },
-
             {
                 name: "Git",
                 type: "framework",
@@ -269,13 +223,6 @@ class App extends Component {
                 name: "JQuery",
                 type: "framework",
             },
-
-
-
-
-
-
-
             {
                 name: "NodeJS",
                 type: "framework",
@@ -292,60 +239,9 @@ class App extends Component {
                 name: "Nginx",
                 type: "framework",
             },
-            
-
-        ]
-        // skills: [
-        //     {
-        //         name: "frameworks",
-        //         items: [
-        //             "coding",
-        //             "secondar",
-        //             "neverever",
-        //             "coding",
-        //             "fpimary",
-        //             "test",
-        //             "codd dfdfing",
-        //         ],
-        //     },
-        //     {
-        //         name: "languages",
-        //         items: [
-        //             "coding",
-        //             "secondar",
-        //             "neverever",
-        //             "coding",
-        //             "fpimary",
-        //             "test",
-        //             "codd dfdfing",
-        //         ],
-        //     },
-        //     {
-        //         name: "development",
-        //         items: [
-        //             "coding",
-        //             "secondar",
-        //             "neverever",
-        //             "coding",
-        //             "fpimary",
-        //             "test",
-        //             "codd dfdfing",
-        //         ],
-        //     },
-        //     {
-        //         name: "interpersonal",
-        //         items: [
-        //             "coding",
-        //             "secondar",
-        //             "neverever",
-        //             "coding",
-        //             "fpimary",
-        //             "test",
-        //             "codd dfdfing",
-        //         ],
-        //     }
-        // ],
-    }
+        ] //Skills
+    
+    } //this.State
 
     getFeaturedProjects = () => {
         return this.state.projects.filter(project => project.featured === true);

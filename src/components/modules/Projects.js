@@ -20,7 +20,7 @@ class Projects extends Component {
 
     render() {
         return (
-            <div id="projects" className="projectSection">
+            <section id="projects" className="projectSection">
                 <h2>My Projects</h2>
                 <div className="projectItems">
                     <div className="featuredProjectItems">
@@ -28,7 +28,7 @@ class Projects extends Component {
                     </div>
                     {this.getNonFeaturedProjects()}
                 </div>
-            </div>
+            </section>
         )
     }
 }

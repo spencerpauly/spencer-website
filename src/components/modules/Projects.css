@@ -1,9 +1,3 @@
-.projectItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .projectSection {
     text-align: center;
     padding: 2em;
@@ -12,9 +6,17 @@
     width: 100%;
 }
 
+.projectItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .featuredProjectItems {
     padding-bottom: 3em;
 }
+
+/* Mobile */
 
 @media only screen and (max-width: 800px) {
     .projectSection {
