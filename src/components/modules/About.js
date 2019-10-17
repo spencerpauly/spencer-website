@@ -73,14 +73,14 @@ export class About extends Component {
                     <aside className="quickInfo">
                         <div>
                             <span className="fa-layers fa-fw iconWrapper">
-                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faCircle} color="#1195fa" />
                                 <FontAwesomeIcon icon={faGraduationCap} inverse transform="shrink-8"/>
                             </span> 
                             <span className="iconText"><b>University of Minnesota Duluth</b></span>                        
                         </div>
                         <div>
                             <span className="fa-layers fa-fw iconWrapper">
-                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faCircle} color="#1195fa" />
                                 <FontAwesomeIcon icon={faBook} inverse transform="shrink-8"/>
                             </span> 
                             <span className="iconText"><b>Computer Science B.S.</b>
@@ -91,14 +91,14 @@ export class About extends Component {
                         </div>
                         <div>
                             <span className="fa-layers fa-fw iconWrapper">
-                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faCircle} color="#1195fa" />
                                 <FontAwesomeIcon icon={faCalendarWeek} inverse transform="shrink-8"/>
                             </span> 
                             <span className="iconText"><b>Graduation Year 2021</b></span>
                         </div>
                         <div>
                             <span className="fa-layers fa-fw iconWrapper">
-                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faCircle} color="#1195fa" />
                                 <FontAwesomeIcon icon={faBookReader} inverse transform="shrink-8"/>
                             </span> 
                             <span className="iconText"><b>Relevant Courses:</b> 
@@ -118,7 +118,7 @@ export class About extends Component {
                         </div>
                         <div>
                             <span className="fa-layers fa-fw iconWrapper">
-                                <FontAwesomeIcon icon={faCircle} color="#0984e3" />
+                                <FontAwesomeIcon icon={faCircle} color="#1195fa" />
                                 <FontAwesomeIcon icon={faMapPin} inverse transform="shrink-8"/>
                             </span> 
                             <span className="iconText"><b>Minneapolis, MN</b></span>

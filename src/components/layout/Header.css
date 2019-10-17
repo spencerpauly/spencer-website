@@ -1,8 +1,8 @@
 #header {
-    background: #0984e3;
+    background: #1195fa;
 }
 .header {
-    min-height: 20em;
+    min-height: 22em;
     padding-top: 3em;
     width: 100%;
     color: white;
@@ -78,7 +78,7 @@
 
     .header {
         min-height: 24em;
-        padding-bottom: 1em;
+        padding-bottom: 3em;
     }
 
     .headerImg {
@@ -96,7 +96,7 @@
 @media only screen and (max-width: 600px) {
     .header div {
         text-align: center !important;
-        margin-left: 3em;
+        margin-left: .5em;
         margin-right: .4em;
         
     }
