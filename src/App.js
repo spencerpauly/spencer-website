@@ -14,16 +14,37 @@ class App extends Component {
     state = {
         projects: [
             {
+                id: 5,
+                title: "Minimal Youtube Search App",
+                desc: "This search app is built in React and offers a minimal search browser for youtube. It's built with the goal of allowing me to use youtube for research and learning while not getting distracted by recommended videos.",
+                image: "projects/youtubeicon_nvkes9.png",
+                github: "https://github.com/spencerpauly/youtube-minimal-search-app",
+                project: "https://youtube.spencerpauly.com",
+                status: "Completed 10/29/2019",
+                frameworks: [
+                    "React",
+                    "Youtube API",
+                    "Git",
+                    "Cloudinary CDN",
+                ],
+                programmingLanguages: [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                featured: true,
+                show: true,
+            },
+            {
                 id: 0,
                 title: "SpencerPauly.com Portfolio Website in React",
                 desc: "This website is my online portfolio built using the React framework. The initial prototype for the site was built in 24 hours with no prior experience with React at all. From that point on I've been adding features and keeping continous progress updates through git. This project uses Nginx as a backend reverse proxy, MongoDB as a dynamic database for project data, and Flexbox web design to provide a beautiful responsive front-end interface. Future plans include a refactoring, as-well as a UI/UX overhaul and cleaner backend design with Docker containers.",
                 image: "projects/spencerpauly-1_gtrvdg.png",
                 github: "https://github.com/spencerpauly/spencerpauly.com-main-website",
                 project: "",
-                status: "Work In Progress",
+                status: "Completed 9/27/2019",
                 frameworks: [
                     "React",
-                    "React-Bootstrap",
                     "NodeJS",
                     "Nginx",
                     "MongoDB",
@@ -97,7 +118,7 @@ class App extends Component {
                 programmingLanguages: [
                     "C++",
                 ],
-                featured: true,
+                featured: false,
                 show: true,
             },
             {

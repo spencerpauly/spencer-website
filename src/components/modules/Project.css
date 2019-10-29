@@ -26,8 +26,9 @@
 }
 
 .projectImage {
-    width: auto;
+    width: 16em;
     height: 16em;
+    object-fit: cover;
 }
 
 .featuredProject h3 {
