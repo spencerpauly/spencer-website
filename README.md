@@ -39,7 +39,7 @@ Must make sure spotify public/private key is not commmitted to git repository.
 ## Other
 #### Currently running projects
 | Port          | Project                         |
-| ------------- |:-------------------------------:|
+| ------------- |:--------------------------------|
 | 3000          | Main Website                    |
 | 3001          | Spotify Statistics Web App      |
 | 3002          | Youtube Minimal Search App      |
