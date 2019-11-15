@@ -37,7 +37,7 @@ Must make sure spotify public/private key is not commmitted to git repository.
 - Docker
 
 ## Other
-#### Currently running projects
+#### Currently running projects:
 | Port          | Project                         |
 | ------------- |:--------------------------------|
 | 3000          | Main Website                    |
