@@ -1,26 +1,26 @@
 .projectSection {
-    text-align: center;
-    padding: 2em;
-    padding-top: 3em;
-    padding-bottom: 5em;
-    width: 100%;
+	text-align: center;
+	padding: 2em;
+	padding-top: 3em;
+	padding-bottom: 5em;
+	width: 100%;
 }
 
 .projectItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .featuredProjectItems {
-    padding-bottom: 3em;
+	padding-bottom: 3em;
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 800px) {
-    .projectSection {
-        padding-left: .4em;
-        padding-right: .4em;
-    }
+	.projectSection {
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+	}
 }

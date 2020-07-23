@@ -1,137 +1,136 @@
 /* Featured Project */
 
 .featuredProject .projectBadge {
-    float: left;
-    margin-right: .3em;
-    margin-bottom: 1em;
-    padding-left: .6em;
-    padding-right: .6em;
-    padding-top: .4em;
-    padding-bottom: .4em;
+	float: left;
+	margin-right: 0.3em;
+	margin-bottom: 1em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
 }
 
 .featuredProject {
-    flex-grow: 1;
-    align-self: center;
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    align-items: center;
+	flex-grow: 1;
+	align-self: center;
+	width: 100%;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	margin-top: 3rem;
 }
 
 .featuredProjectDescription {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
 }
 
 .projectImage {
-    width: 16em;
-    height: 16em;
-    object-fit: cover;
+	width: 16em;
+	height: 16em;
+	object-fit: cover;
 }
 
 .featuredProject h3 {
-    text-align: left;
-    font-size: 1.3em;
+	text-align: left;
+	font-size: 1.4em;
 }
 
 .featuredProject p {
-    text-align: left;
-    font-size: .9em;
+	text-align: left;
+	font-size: 0.9em;
 }
 
 /* Non-Featured Project */
 
 .projectItem {
-    padding: 1em;
-    display: inline-flex;
-    text-align: left;
-    margin-top: 0em;   
+	padding: 1em;
+	display: inline-flex;
+	text-align: left;
+	margin-top: 2rem;
 }
 
 .projectItem h3 {
-    font-size: 1.3em;
+	font-size: 1.3em;
 }
 
 .projectItem p {
-    font-size: .9em;
+	font-size: 0.9em;
 }
 
-  
 /* Project Buttons */
 
 .interactionButtons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .projectButtons {
-    margin: 0em;
+	margin: 0em;
 }
 
 .projectButton {
-    margin-right: .3em;
+	margin-right: 0.3em;
 }
 
 .btn-project {
-    background-color: #1195fa !important;
-    color: white !important;
+	background-color: #1195fa !important;
+	color: white !important;
 }
 
 .btn-github {
-    background-color: #212121 !important;
-    color: white !important;
-    size: 20em;
+	background-color: #212121 !important;
+	color: white !important;
+	size: 20em;
 }
 
 .liveIcon {
-    font-size: .9em;
-    padding-left: .4em;
-    vertical-align: top;
+	font-size: 0.9em;
+	padding-left: 0.4em;
+	vertical-align: top;
 }
 
 /* Project Badges */
 
 .projectItem .projectBadge {
-    margin-right: .3em;
+	margin-right: 0.3em;
 }
 
 .badge-primaryItem {
-    background-color: #1195fa !important;
-    color: white !important;
+	background-color: #1195fa !important;
+	color: white !important;
 }
 
 .badge-secondaryItem {
-    background-color: #2d3436 !important;
-    color: white !important;
+	background-color: #2d3436 !important;
+	color: white !important;
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 800px) {
-    .featuredProject h3 {
-        font-size: 1.3em;
-    }
-    .featuredProject p {
-        font-size: .8em;
-    }
-    .featuredProject .projectBadges {
-        display: none;
-    }
-    .projectImage {
-        width: 10em;
-        height: 10em;
-    }
+	.featuredProject h3 {
+		font-size: 1.3em;
+	}
+	.featuredProject p {
+		font-size: 0.8em;
+	}
+	.featuredProject .projectBadges {
+		display: none;
+	}
+	.projectImage {
+		width: 10em;
+		height: 10em;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-    .projectImage {
-        width: 2em;
-        height: 2em;
-        align-self: flex-start;
-        margin-top: .5em;
-    }
+	.projectImage {
+		width: 2em;
+		height: 2em;
+		align-self: flex-start;
+		margin-top: 0.5em;
+	}
 }
-
