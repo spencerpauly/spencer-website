@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const articles = [
 	{
 		name: 'My Plan For a Personal Website Overhaul',
-		url: 'https://bit.ly/3kniWGx',
+		url: 'https://medium.com/@spencerpauly',
 		views: '',
 	},
 	{
