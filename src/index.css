@@ -1,17 +1,15 @@
-
 html {
-  margin: 0;
-  height: 100%;
-  scroll-behavior: smooth;
+	margin: 0;
+	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  height: 100%;
-  font-family: "Roboto", "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: red;
+	margin: 0;
+	height: 100%;
+	font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: red;
 }

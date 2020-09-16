@@ -1,108 +1,113 @@
 #header {
-    background: #1195fa;
+	background: #1195fa;
 }
 .header {
-    min-height: 22em;
-    padding-top: 3em;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
+	min-height: 22em;
+	padding-top: 3em;
+	width: 60%;
+	margin: auto;
+	color: white;
+	display: flex;
+	justify-content: center;
 }
 
 .header div {
-    text-align: left;
-    align-self: center;
+	text-align: left;
+	align-self: center;
 }
 
 .headerImg {
-    width: 15em;
-    height: auto;
-    border-radius: 50%;
-    margin-left: 2em;
-    margin-right: 2em;
+	width: 15em;
+	height: auto;
+	border-radius: 50%;
+	margin-left: 2em;
+	margin-right: 3em;
 }
 
 .header h1 {
-    font-size: 2.1em;
+	font-size: 3.1em;
 }
 
 .header p {
-    font-size: .9em;
-    max-width: 55em;
-    margin-right: 2em;
+	font-size: 1rem;
+	max-width: 55em;
+	margin-right: 2em;
+	font-weight: 400;
 }
 
 .btn-main {
-    background-color: #212121 !important;
-    color: white !important;
-    padding-left: 5.5em !important;
-    padding-right: 5.5em !important;
+	background-color: #212121 !important;
+	color: white !important;
+	padding-left: 5.5em !important;
+	padding-right: 5.5em !important;
 }
 
 .socialMediaButtons {
-    min-width: 20em;
-    width: 100%;
-    text-align: right;
-    padding-right: .8em;
-    padding-bottom: .3em;
-    font-size: 1.2em;
+	min-width: 20em;
+	width: 100%;
+	text-align: right;
+	padding-right: 0.8em;
+	padding-bottom: 0.3em;
+	font-size: 1.2em;
 }
 
 .githubIcon:hover {
-    color: #bbbbbb;
+	color: #bbbbbb;
 }
 
 .linkedinIcon:hover {
-    color: #0077B5;
+	color: #0077b5;
 }
 
 .instagramIcon:hover {
-    color: #F77737;
+	color: #f77737;
 }
 
 .spotifyIcon:hover {
-    color: #1DB954;
+	color: #1db954;
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 900px) {
-    .socialMediaButtons {
-        text-align: center;
-        padding-right: 0em;
-        margin-left: 0em;
-        min-width: 10em;
+	.socialMediaButtons {
+		text-align: center;
+		padding-right: 0em;
+		margin-left: 0em;
+		min-width: 10em;
+	}
 
-    }
+	.header {
+		min-height: 24em;
+		padding-bottom: 3em;
+		width: 100%;
+		margin: auto;
+		padding-left: 15px;
+	}
 
-    .header {
-        min-height: 24em;
-        padding-bottom: 3em;
-    }
+	.headerImg {
+		display: none;
+	}
 
-    .headerImg {
-        display: none;
-    }
-
-    .header div {
-        text-align: center !important;
-        margin-left: .4em;
-        margin-right: .4em;
-        
-    }
+	.header div {
+		text-align: center !important;
+		margin-left: 0.4em;
+		margin-right: 0.4em;
+		width: 100%;
+	}
+	.imasd {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-    .header div {
-        text-align: center !important;
-        margin-left: .5em;
-        margin-right: .4em;
-        
-    }
+	.header div {
+		text-align: center !important;
+		margin-left: 0.5em;
+		margin-right: 0.4em;
+	}
 
-    .headerImg {
-        width: 10em;
-    }
-
+	.headerImg {
+		width: 10em;
+	}
 }

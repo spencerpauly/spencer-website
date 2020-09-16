@@ -6,6 +6,12 @@
 	width: 100%;
 }
 
+.projectSection h2 {
+	padding-bottom: 0rem;
+	padding-top: 2rem;
+	font-weight: bold;
+}
+
 .projectItems {
 	display: flex;
 	flex-wrap: wrap;

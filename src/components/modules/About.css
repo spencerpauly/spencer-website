@@ -1,203 +1,204 @@
 /* General About Section */
 
 .aboutSection {
-    text-align: center;
-    padding: 2em;
-    float: center;
-    margin: 0 auto;
-    width: 100%;
+	text-align: center;
+	padding: 2em;
+	float: center;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .aboutSection h2 {
-    padding-bottom: 1em;
-    padding-top: .3em;
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+	font-weight: bold;
 }
 
 .aboutSectionFlexbox {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
 }
 
 /* QuickInfo Aside Section */
 
 .quickInfo {
-    flex-grow: 1;
-    text-align: left;
-    flex-basis: 47%;
+	flex-grow: 1;
+	text-align: left;
+	flex-basis: 47%;
 }
 
 .quickInfo div {
-    margin-bottom: .6em;
-    margin-right: 4em;
+	margin-bottom: 1em;
+	margin-right: 4em;
 }
 
 .quickInfo div span {
-    vertical-align: middle;   
+	vertical-align: middle;
 }
 
 .iconWrapper {
-    font-size: 2em;
-    margin-right: .2em;
+	font-size: 2em;
+	margin-right: 0.2em;
 }
 
 .iconText {
-    font-size: 1em;
-    vertical-align: middle;
+	font-size: 1em;
+	vertical-align: middle;
 }
 
 .relevantCourses {
-    list-style: none;
-    margin-left: 4.3em;
-    font-size: .9em;
+	list-style: none;
+	margin-left: 4.3em;
+	font-size: 0.9em;
 }
 
 /* Bio Section */
 
 .bio {
-    width: 100%;
-    flex-grow: 1;
+	width: 100%;
+	flex-grow: 1;
 }
 
 .bio p {
-    text-align: left;
+	text-align: left;
 }
 
 .bio h3 {
-    font-size: 1.1em;
-    padding-bottom: 0;
-    margin-bottom: .2em;
-    font-weight: bold;
-    text-align: left;
+	font-size: 1.1em;
+	padding-bottom: 0;
+	margin-bottom: 0.2em;
+	font-weight: bold;
+	text-align: left;
 }
 
 .aboutMeText {
-    font-size: .9em;
-    text-align: left;
+	font-size: 0.9em;
+	text-align: left;
 }
 
 .aboutMeParagraph {
-    padding-bottom: 1em;
+	padding-bottom: 1em;
 }
 
 /* Job History Section */
 
 .jobHistoryFlexbox {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .jobHistoryFlexItem {
-    flex-basis: .5;
-    font-weight: bold;
+	flex-basis: 0.5;
+	font-weight: bold;
 }
 
 .jobTalkingPoints {
-    padding-left: 1em;
-    font-size: .9em;
+	padding-left: 1em;
+	font-size: 0.9em;
 }
 
 /* Skills Section */
 
 .skillsList {
-    display: flex;
-    justify-content: center;
-    padding-top: 2em;
+	display: flex;
+	justify-content: center;
+	padding-top: 2em;
 }
 
 .skillsList h5 {
-    max-width: 30em;
+	max-width: 30em;
 }
 
 .skillBadge {
-    margin-left: .1em;
-    margin-right: .1em;
-    margin: .2em;
-    float: left;
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	margin: 0.2em;
+	float: left;
 }
 
 .skillsBadgeContainer {
-    max-width: 25em;
-    float: left;
-    text-align: center;
-    margin: 0 auto;
+	max-width: 25em;
+	float: left;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .skillsLegend {
-    padding-top: 2em;
-    font-size: .8em;
-    text-align: left;
-    line-height: 1.3em;
-    margin-left: 0em;
-    padding-bottom: 4em;
+	padding-top: 2em;
+	font-size: 0.8em;
+	text-align: left;
+	line-height: 1.3em;
+	margin-left: 0em;
+	padding-bottom: 4em;
 }
 
 .skillsLegend ul {
-    list-style: none;
+	list-style: none;
 }
 
 .skillsLegend span {
-    color: black;
-    font-weight: 400;
+	color: black;
+	font-weight: 400;
 }
 
 .badge-framework {
-    background-color: #1abc9c !important;
-    color: white !important;
+	background-color: #1abc9c !important;
+	color: white !important;
 }
 
 .badge-language {
-    background-color: #f39c12 !important;
-    color: white !important;
+	background-color: #f39c12 !important;
+	color: white !important;
 }
 
 .badge-development {
-    background-color: #9b59b6 !important;
-    color: white !important;
+	background-color: #9b59b6 !important;
+	color: white !important;
 }
 
 .badge-interpersonal {
-    background-color: #3498db !important;
-    color: white !important;
+	background-color: #3498db !important;
+	color: white !important;
 }
 
 .frameworkColor {
-    color: #1abc9c !important;
+	color: #1abc9c !important;
 }
 
 .languageColor {
-    color: #f39c12 !important;
+	color: #f39c12 !important;
 }
 
 .developmentColor {
-    color: #9b59b6 !important;
+	color: #9b59b6 !important;
 }
 
 .interpersonalColor {
-    color: #3498db !important;
+	color: #3498db !important;
 }
 
 /* Call to Action */
 
 .moreInfoButton {
-    padding-right: 3em !important;
-    padding-left: 3em !important;
+	padding-right: 3em !important;
+	padding-left: 3em !important;
 }
 
 .contactMeBtnInAboutMe {
-    margin-left: .5em;
+	margin-left: 0.5em;
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 900px) {
-    .quickInfo {
-        display: none;
-    }
+	.quickInfo {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 700px) {
-    .mySkillsSection {
-        display: none;
-    }
+	.mySkillsSection {
+		display: none;
+	}
 }

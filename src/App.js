@@ -8,23 +8,23 @@ import Projects from './components/modules/Projects';
 import ContactMe from './components/modules/ContactMe';
 import Footer from './components/layout/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from 'styled-components';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class App extends Component {
 	state = {
 		projects: [
 			{
 				id: 1222,
-				title: 'Skiwise - iOS & Android App',
+				title: 'Skiwise iOS, Android, Web App',
+				sideTitle: '550+ downloads',
 				desc: `
           Skiwise is an iOS and Android app for Cross Country Skiers to view trail conditions. As a skier myself, I've had numerous situations where I've driven all the way
           out to a ski trail only to realize it hasn't been groomed after the big storm 2 days ago. Bregrudingly I finish my workout on the thick powder, but each time
-          this happens I wish for a solution. That's one of the many problems that Skiwise is hoping to solve. Skiwise a mobile app for skiers to connect with other 
-          skiers, trail groomers, and live weather reports to receive realtime trail conditions straight to your mobile device. Skiwise is built as a hybrid mobile app using 
-          Ionic 5 and React. It's backend is comprised of an automated CI/CD pipeline to deploy google cloud functions,
-          a powerful Hasura GraphQL API, and a Postgres database. Authentication is handled through Firebase Auth and file storage 
-          is powered by google's cloud storage.
+          this happens I wish for a solution. Skiwise solves that issue.
         `,
-				image: 'projects/skiwise_xxsda.png',
+				image: 'projects/store_ygifdk.png',
 				github: '',
 				project: 'https://skiwise-app.com',
 				status: 'Ongoing',
@@ -80,7 +80,7 @@ class App extends Component {
 					'Cloudinary CDN',
 				],
 				programmingLanguages: ['HTML', 'CSS', 'JavaScript'],
-				featured: true,
+				featured: false,
 				show: true,
 			},
 			{
@@ -94,7 +94,7 @@ class App extends Component {
 				status: 'Completed 12/20/2018',
 				frameworks: ['JQuery', 'Bootstrap', 'NodeJS', 'Web API', 'Git'],
 				programmingLanguages: ['HTML', 'CSS', 'JavaScript'],
-				featured: true,
+				featured: false,
 				show: true,
 			},
 			{
@@ -277,11 +277,20 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
+				<StickyMessage>
+					<div>
+						Hey Folks! I'm Currently Redesigning My Website in <b>Next.js</b> & <b>Ghost</b>.{'  '}
+						<a target='_blank' href='https://medium.com/@spencerpauly'>
+							{' '}
+							Follow the journey here! <FontAwesomeIcon icon={faExternalLinkAlt} color='#007bff' />
+						</a>
+					</div>
+				</StickyMessage>
 				<div className='App'>
 					<NavigationBar />
 					<Header />
 					<section className='content'>
-						<About skills={this.state.skills} />
+						{/* <About skills={this.state.skills} /> */}
 						<Projects projects={this.state.projects} />
 					</section>
 					<ContactMe />
@@ -293,3 +302,16 @@ class App extends Component {
 }
 
 export default App;
+
+const StickyMessage = styled.div`
+	position: sticky;
+	min-height: 70px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #121212;
+	text-align: middle;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6cf5b0;
+`;

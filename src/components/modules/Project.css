@@ -16,25 +16,41 @@
 	width: 100%;
 	padding: 1em;
 	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.titlesection {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	flex-wrap: wrap;
 	align-items: center;
-	margin-top: 3rem;
+}
+
+.right {
+	color: #1195fa;
+	font-weight: bold;
 }
 
 .featuredProjectDescription {
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
+	padding: 30px;
+	font-family: Helvetica, sans-serif;
 }
 
 .projectImage {
-	width: 16em;
-	height: 16em;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
 .featuredProject h3 {
 	text-align: left;
 	font-size: 1.4em;
+	font-weight: bold;
 }
 
 .featuredProject p {
@@ -43,6 +59,15 @@
 }
 
 /* Non-Featured Project */
+
+.sadasda {
+	text-decoration: underline;
+}
+
+.asdasdasd {
+	font-weight: bold;
+	color: rgb(255, 56, 56);
+}
 
 .projectItem {
 	padding: 1em;
@@ -69,6 +94,10 @@
 
 .projectButtons {
 	margin: 0em;
+}
+
+.featurenew {
+	font-weight: bold;
 }
 
 .projectButton {
@@ -120,17 +149,10 @@
 	.featuredProject .projectBadges {
 		display: none;
 	}
-	.projectImage {
-		width: 10em;
-		height: 10em;
-	}
 }
 
 @media only screen and (max-width: 500px) {
 	.projectImage {
-		width: 2em;
-		height: 2em;
-		align-self: flex-start;
 		margin-top: 0.5em;
 	}
 }
